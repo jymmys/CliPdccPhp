@@ -1,10 +1,10 @@
 <?php  
 
     require_once("client/cliente.php");
-    require_once("model/SingleResponse.php");
-    require_once("model/TokenRequest.php");
-    require_once("model/Request.php");
-    require_once("model/Catalogo.php");
+    require_once("model/util/SingleResponse.php");
+    require_once("model/util/TokenRequest.php");
+    require_once("model/util/Request.php");
+    require_once("model/catalogo/Catalogo.php");
 
     class serviceClient{
         public function ConsultarToken($tokenRequest)
