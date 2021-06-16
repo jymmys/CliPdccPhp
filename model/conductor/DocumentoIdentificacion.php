@@ -7,10 +7,9 @@ class DocumnetoIdentificacion
 	private $NUMERO;
 	private $PAIS_DE_EMISION;
 	private $FECHA_VENCIMIENTO;
-	
+
 	/*
 	*/
-
 
 	//Constructor
 	function __construct($TIPO, $NUMERO, $PAIS_DE_EMISION, $FECHA_VENCIMIENTO)
@@ -25,7 +24,8 @@ class DocumnetoIdentificacion
 	*/
 
 	//get TIPO
-	public function getTIPO(){
+	public function getTIPO()
+	{
 		return $this->TIPO;
 	}
 
@@ -33,5 +33,34 @@ class DocumnetoIdentificacion
 	*/
 
 	//set TIPO
-	public function setTIPO
+	public function setTIPO($TIPO)
+	{
+		$this->TIPO = $TIPO;
+		return $this;
+	}
+
+	/*
+	*/
+	//get NUMERO
+	public function getNUMERO(){
+		return $this->NUMERO;
+	}
+
+	//set NUMERO
+	public function setNUMERO($NUMERO){
+		$this->NUMERO = $NUMERO;
+		return $this;
+	}
+
+	/*
+	*/
+	//get PAIS_DE_EMISION
+	public function getPAIS_DE_EMISION(){
+		return $this->PAIS_DE_EMISION;
+	}
+
+	//set PAIS_DE_EMISION
+	public function setPAIS_DE_EMISION(PAIS_DE_EMISION){
+		
+	}
 }
