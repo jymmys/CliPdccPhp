@@ -1,0 +1,175 @@
+<?php
+class Conductor
+{
+
+	private $CODIGO_CONDUCTOR;
+	private $CODIGO_TRANSPORTISTA;
+	private $INFORMACION_GENERAL;
+	private $DOCUMENTOS_DE_IDENTIFICACION = array(Documento_De_Identificacion);
+	private $LICENCIA_CONDUCTOR;
+	private $TELEFONO;
+	private $CORREO_ELECTRONICO;
+	private $FECHA_AUTORIZACION;
+	private $TRANSPORTISTA = list($Transportistas);
+
+	//Constructor
+	function __construct($CODIGO_CONDUCTOR, $CODIGO_TRANSPORTISTA, $INFORMACION_GENERAL, $DOCUMENTOS_DE_IDENTIFICACION, $LICENCIA_CONDUCTOR, $TELEFONO, $CORREO_ELECTRONICO, $FECHA_AUTORIZACION, $TRANSPORTISTA)
+	{
+		$this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+		$this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+		$this->INFORMACION_GENERAL = $INFORMACION_GENERAL;
+		$this->DOCUMENTOS_DE_IDENTIFICACION = $DOCUMENTOS_DE_IDENTIFICACION;
+		$this->CLICENCIA_CONDUCTOR = $LICENCIA_CONDUCTOR;
+		$this->TELEFONO = $TELEFONO;
+		$this->CORREO_ELECTRONICO = $CORREO_ELECTRONICO;
+		$this->FECHA_AUTORIZACION = $FECHA_AUTORIZACION;
+		$this->TRANSPORTISTA = $TRANSPORTISTA;
+	}
+
+	/*
+	*/
+
+	//Get getCODIGO_CONDUCTOR
+	public function getCODIGO_CONDUCTOR()
+	{
+		return $this->CODIGO_CONDUCTOR;
+	}
+
+	//Set getCODIGO_CONDUCTOR
+	public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
+	{
+		$this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get CODIGO_TRANSPORTISTA
+	public function getCODIGO_TRANSPORTISTA()
+	{
+		return $this->CODIGO_TRANSPORTISTA;
+	}
+
+	//Set CODIGO_TRANSPORTISTA
+	public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
+	{
+		$this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get INFORMACION_GENERAL
+	public function getINFORMACION_GENERAL()
+	{
+		return $this->INFORMACION_GENERAL;
+	}
+
+	//Set CODIGO_INFORMACION_GENERALRANSPORTISTA
+	public function setINFORMACION_GENERAL($INFORMACION_GENERAL)
+	{
+		$this->INFORMACION_GENERAL = $INFORMACION_GENERAL;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get DOCUMENTOS_DE_IDENTIFICACION
+	public function getDOCUMENTOS_DE_IDENTIFICACION()
+	{
+		return $this->DOCUMENTOS_DE_IDENTIFICACION;
+	}
+
+	//Set DOCUMENTOS_DE_IDENTIFICACION
+	public function setDOCUMENTOS_DE_IDENTIFICACION($DOCUMENTOS_DE_IDENTIFICACION)
+	{
+		$this->DOCUMENTOS_DE_IDENTIFICACION = $DOCUMENTOS_DE_IDENTIFICACION;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get LICENCIA_CONDUCTOR
+	public function getLICENCIA_CONDUCTOR()
+	{
+		return $this->LICENCIA_CONDUCTOR;
+	}
+
+	//Set LICENCIA_CONDUCTOR
+	public function setLICENCIA_CONDUCTOR($LICENCIA_CONDUCTOR)
+	{
+		$this->LICENCIA_CONDUCTOR = $LICENCIA_CONDUCTOR;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get TELEFONO
+	public function setTELEFONO()
+	{
+		return $this->TELEFONO;
+	}
+
+	//set TELEFONO
+	public function getTELEFONO($TELEFONO)
+	{
+		$this->TELEFONO = $TELEFONO;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//get CORREO_ELECTRONICO
+	public function getCORREO_ELECTRONICO()
+	{
+		return $this->CORREO_ELECTRONICO;
+	}
+
+	//set CORREO_ELECTRONICO
+	public function setCORREO_ELECTRONICO($CORREO_ELECTRONICO)
+	{
+		$this->CORREO_ELECTRONICO = $CORREO_ELECTRONICO;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//Get FECHA_AUTORIZACION
+	public function GetFECHA_AUTORIZACION()
+	{
+		return $this->FECHA_AUTORIZACION;
+	}
+
+	//set FECHA_AUTORIZACION
+	public function setFECHA_AUTORIZACION($FECHA_AUTORIZACION)
+	{
+		$this->FECHA_AUTORIZACION = $FECHA_AUTORIZACION;
+		return $this;
+	}
+
+	/*
+	*/
+
+	//get TRANSPORTISTA
+	public function getTRANSPORTISTA()
+	{
+		return $this->TRANSPORTISTA;
+	}
+
+	//set TRANSPORTISTA
+	public function setTRANSPORTISTA($TRANSPORTISTA)
+	{
+		$this->TRANSPORTISTA = $TRANSPORTISTA;
+		return $this;
+	}
+
+	/*
+	*/
+}
