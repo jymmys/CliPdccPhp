@@ -1,29 +1,35 @@
-<?php
-
-require_once("Conductor.php");
-
-class Conductor extends Conductor
+/*/
+@Yimis Torreglosa Diaz
+/*/
+<?php class Conductor
 {
+    private $Conductor;
 
-	//Variable
-	private $Conductor;
+    public function __construct()
+    {
+    }
 
-	// Constructor con Argumentos
-	function __construct($Conductor)
-	{
-		$this->Conductor = $Conductor;
-	}
+    //Variable
+    private $Conductor;
 
-	//Get
-	public function getConductor()
-	{
-		return $this->Conductor;
-	}
+    // Constructor con Argumentos
+    function __construct($Conductor)
+    {
+        $this->Conductor = $Conductor;
+    }
 
-	//Set
-	public function setConductor($Conductor)
-	{
-		$this->Conductor = $Conductor;
-		return $this;
-	}
+    //Get
+    public function getConductor()
+    {
+        return $this->Conductor;
+    }
+
+    //Set
+    public function setConductor($Conductor)
+    {
+        $this->Conductor = $Conductor;
+        return $this;
+    }
 }
+
+?>

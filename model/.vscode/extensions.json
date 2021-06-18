@@ -1,3 +1,8 @@
 {
-  "recommendations": ["esbenp.prettier-vscode"]
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "mehedidracula.php-constructor",
+    "sophisticode.php-formatter",
+    "simonsiefke.prettier-vscode"
+  ]
 }

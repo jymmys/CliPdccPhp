@@ -1,3 +1,6 @@
+/*/
+@Yimis Torreglosa Diaz
+/*/
 <?php
 class Conductor
 {
@@ -13,163 +16,188 @@ class Conductor
 	private $TRANSPORTISTA = array([])//PENDIENTE
 
 	//Constructor
-	function __construct($CODIGO_CONDUCTOR, $CODIGO_TRANSPORTISTA, $INFORMACION_GENERAL, $DOCUMENTOS_DE_IDENTIFICACION, $LICENCIA_CONDUCTOR, $TELEFONO, $CORREO_ELECTRONICO, $FECHA_AUTORIZACION, $TRANSPORTISTA)
+	function __construct()
 	{
-		$this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
-		$this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
-		$this->INFORMACION_GENERAL = $INFORMACION_GENERAL;
-		$this->DOCUMENTOS_DE_IDENTIFICACION = $DOCUMENTOS_DE_IDENTIFICACION;
-		$this->CLICENCIA_CONDUCTOR = $LICENCIA_CONDUCTOR;
-		$this->TELEFONO = $TELEFONO;
-		$this->CORREO_ELECTRONICO = $CORREO_ELECTRONICO;
-		$this->FECHA_AUTORIZACION = $FECHA_AUTORIZACION;
-		$this->TRANSPORTISTA = $TRANSPORTISTA;
 	}
-
-	/*
-	*/
-
-	//Get getCODIGO_CONDUCTOR
+	/**
+	 * Get the value of CODIGO_CONDUCTOR
+	 */ 
 	public function getCODIGO_CONDUCTOR()
 	{
 		return $this->CODIGO_CONDUCTOR;
 	}
 
-	//Set getCODIGO_CONDUCTOR
+	/**
+	 * Set the value of CODIGO_CONDUCTOR
+	 *
+	 * @return  self
+	 */ 
 	public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
 	{
 		$this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+
 		return $this;
 	}
-
-	/*
-	*/
-
-	//Get CODIGO_TRANSPORTISTA
+	/**
+	 * Get the value of CODIGO_TRANSPORTISTA
+	 */ 
 	public function getCODIGO_TRANSPORTISTA()
 	{
 		return $this->CODIGO_TRANSPORTISTA;
 	}
 
-	//Set CODIGO_TRANSPORTISTA
+	/**
+	 * Set the value of CODIGO_TRANSPORTISTA
+	 *
+	 * @return  self
+	 */ 
 	public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
 	{
 		$this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//Get INFORMACION_GENERAL
+	/**
+	 * Get the value of INFORMACION_GENERAL
+	 */ 
 	public function getINFORMACION_GENERAL()
 	{
 		return $this->INFORMACION_GENERAL;
 	}
 
-	//Set CODIGO_INFORMACION_GENERALRANSPORTISTA
+	/**
+	 * Set the value of INFORMACION_GENERAL
+	 *
+	 * @return  self
+	 */ 
 	public function setINFORMACION_GENERAL($INFORMACION_GENERAL)
 	{
 		$this->INFORMACION_GENERAL = $INFORMACION_GENERAL;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//Get DOCUMENTOS_DE_IDENTIFICACION
+	/**
+	 * Get the value of DOCUMENTOS_DE_IDENTIFICACION
+	 */ 
 	public function getDOCUMENTOS_DE_IDENTIFICACION()
 	{
 		return $this->DOCUMENTOS_DE_IDENTIFICACION;
 	}
 
-	//Set DOCUMENTOS_DE_IDENTIFICACION
+	/**
+	 * Set the value of DOCUMENTOS_DE_IDENTIFICACION
+	 *
+	 * @return  self
+	 */ 
 	public function setDOCUMENTOS_DE_IDENTIFICACION($DOCUMENTOS_DE_IDENTIFICACION)
 	{
 		$this->DOCUMENTOS_DE_IDENTIFICACION = $DOCUMENTOS_DE_IDENTIFICACION;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//Get LICENCIA_CONDUCTOR
+	/**
+	 * Get the value of LICENCIA_CONDUCTOR
+	 */ 
 	public function getLICENCIA_CONDUCTOR()
 	{
 		return $this->LICENCIA_CONDUCTOR;
 	}
 
-	//Set LICENCIA_CONDUCTOR
+	/**
+	 * Set the value of LICENCIA_CONDUCTOR
+	 *
+	 * @return  self
+	 */ 
 	public function setLICENCIA_CONDUCTOR($LICENCIA_CONDUCTOR)
 	{
 		$this->LICENCIA_CONDUCTOR = $LICENCIA_CONDUCTOR;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//Get TELEFONO
-	public function setTELEFONO()
+	/**
+	 * Get the value of TELEFONO
+	 */ 
+	public function getTELEFONO()
 	{
 		return $this->TELEFONO;
 	}
 
-	//set TELEFONO
-	public function getTELEFONO($TELEFONO)
+	/**
+	 * Set the value of TELEFONO
+	 *
+	 * @return  self
+	 */ 
+	public function setTELEFONO($TELEFONO)
 	{
 		$this->TELEFONO = $TELEFONO;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//get CORREO_ELECTRONICO
+	/**
+	 * Get the value of CORREO_ELECTRONICO
+	 */ 
 	public function getCORREO_ELECTRONICO()
 	{
 		return $this->CORREO_ELECTRONICO;
 	}
 
-	//set CORREO_ELECTRONICO
+	/**
+	 * Set the value of CORREO_ELECTRONICO
+	 *
+	 * @return  self
+	 */ 
 	public function setCORREO_ELECTRONICO($CORREO_ELECTRONICO)
 	{
 		$this->CORREO_ELECTRONICO = $CORREO_ELECTRONICO;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//Get FECHA_AUTORIZACION
-	public function GetFECHA_AUTORIZACION()
+	/**
+	 * Get the value of FECHA_AUTORIZACION
+	 */ 
+	public function getFECHA_AUTORIZACION()
 	{
 		return $this->FECHA_AUTORIZACION;
 	}
 
-	//set FECHA_AUTORIZACION
+	/**
+	 * Set the value of FECHA_AUTORIZACION
+	 *
+	 * @return  self
+	 */ 
 	public function setFECHA_AUTORIZACION($FECHA_AUTORIZACION)
 	{
 		$this->FECHA_AUTORIZACION = $FECHA_AUTORIZACION;
+
 		return $this;
 	}
 
-	/*
-	*/
-
-	//get TRANSPORTISTA
+	/**
+	 * Get the value of TRANSPORTISTA
+	 */ 
 	public function getTRANSPORTISTA()
 	{
 		return $this->TRANSPORTISTA;
 	}
 
-	//set TRANSPORTISTA
+	/**
+	 * Set the value of TRANSPORTISTA
+	 *
+	 * @return  self
+	 */ 
 	public function setTRANSPORTISTA($TRANSPORTISTA)
 	{
 		$this->TRANSPORTISTA = $TRANSPORTISTA;
+
 		return $this;
 	}
-
-	/*
-	*/
 }
+
+
+?>

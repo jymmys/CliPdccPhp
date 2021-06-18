@@ -1,66 +1,102 @@
-<?php
-class DocumnetoIdentificacion
+/*/
+@Yimis Torreglosa Diaz
+/*/
+<?php class DocumnetoIdentificacion
 {
+    private $TIPO;
+    private $NUMERO;
+    private $PAIS_DE_EMISION;
+    private $FECHA_VENCIMIENTO;
 
+    public function __construct()
+    {
+    }
+    /**
+     * Get the value of TIPO
+     */
 
-	private $TIPO;
-	private $NUMERO;
-	private $PAIS_DE_EMISION;
-	private $FECHA_VENCIMIENTO;
+    public function getTIPO()
+    {
+        return $this->TIPO;
+    }
 
-	/*
-	*/
+    /**
+     * Set the value of TIPO
+     *
+     * @return  self
+     */
 
-	//Constructor
-	function __construct($TIPO, $NUMERO, $PAIS_DE_EMISION, $FECHA_VENCIMIENTO)
-	{
-		$this->TIPO = $TIPO;
-		$this->NUMERO = $NUMERO;
-		$this->PAIS_DE_EMISION = $PAIS_DE_EMISION;
-		$this->FECHA_VENCIMIENTO = $FECHA_VENCIMIENTO;
-	}
+    public function setTIPO($TIPO)
+    {
+        $this->TIPO = $TIPO;
 
-	/*
-	*/
+        return $this;
+    }
 
-	//get TIPO
-	public function getTIPO()
-	{
-		return $this->TIPO;
-	}
+    /**
+     * Get the value of NUMERO
+     */
 
-	/*
-	*/
+    public function getNUMERO()
+    {
+        return $this->NUMERO;
+    }
 
-	//set TIPO
-	public function setTIPO($TIPO)
-	{
-		$this->TIPO = $TIPO;
-		return $this;
-	}
+    /**
+     * Set the value of NUMERO
+     *
+     * @return  self
+     */
 
-	/*
-	*/
-	//get NUMERO
-	public function getNUMERO(){
-		return $this->NUMERO;
-	}
+    public function setNUMERO($NUMERO)
+    {
+        $this->NUMERO = $NUMERO;
 
-	//set NUMERO
-	public function setNUMERO($NUMERO){
-		$this->NUMERO = $NUMERO;
-		return $this;
-	}
+        return $this;
+    }
 
-	/*
-	*/
-	//get PAIS_DE_EMISION
-	public function getPAIS_DE_EMISION(){
-		return $this->PAIS_DE_EMISION;
-	}
+    /**
+     * Get the value of PAIS_DE_EMISION
+     */
 
-	//set PAIS_DE_EMISION
-	public function setPAIS_DE_EMISION(PAIS_DE_EMISION){
-		
-	}
+    public function getPAIS_DE_EMISION()
+    {
+        return $this->PAIS_DE_EMISION;
+    }
+
+    /**
+     * Set the value of PAIS_DE_EMISION
+     *
+     * @return  self
+     */
+
+    public function setPAIS_DE_EMISION($PAIS_DE_EMISION)
+    {
+        $this->PAIS_DE_EMISION = $PAIS_DE_EMISION;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of FECHA_VENCIMIENTO
+     */
+
+    public function getFECHA_VENCIMIENTO()
+    {
+        return $this->FECHA_VENCIMIENTO;
+    }
+
+    /**
+     * Set the value of FECHA_VENCIMIENTO
+     *
+     * @return  self
+     */
+
+    public function setFECHA_VENCIMIENTO($FECHA_VENCIMIENTO)
+    {
+        $this->FECHA_VENCIMIENTO = $FECHA_VENCIMIENTO;
+
+        return $this;
+    }
 }
+?>
