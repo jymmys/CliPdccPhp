@@ -1,35 +1,41 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ConductorConsultarRq
-{
-    private $CODIGO_CONDUCTOR;
+<?php
 
-    public function __construct()
+    class ConductorConsultarRq
     {
-    }
+        private $CODIGO_CONDUCTOR;
 
-    /**
-     * Get the value of CODIGO_CONDUCTOR
-     */
+            
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    public function getCODIGO_CONDUCTOR()
-    {
-        return $this->CODIGO_CONDUCTOR;
-    }
+        // METODOS GETTERS y SETTERS
+        /**
+         * Get the value of CODIGO_CONDUCTOR
+         */
 
-    /**
-     * Set the value of CODIGO_CONDUCTOR
-     *
-     * @return  self
-     */
+        public function getCODIGO_CONDUCTOR()
+        {
+            return $this->CODIGO_CONDUCTOR;
+        }
 
-    public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
-    {
-        $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+        /**
+         * Set the value of CODIGO_CONDUCTOR
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
+        {
+            $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+
+            return $this;
+        }
+    } ?>
 
 

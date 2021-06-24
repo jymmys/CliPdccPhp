@@ -1,200 +1,202 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Factura
-{
-    //VARIABLES
-    private $numero;
-    private $fechaEmision;
-    private $suplidor;
-    private $relacionSuplidor;
-    private $moneda;
-    private $valorOriginal;
-    private $tasaCambio;
-    private $valor;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Factura
     {
-        //
-    }
+        //VARIABLES
+        private $numero;
+        private $fechaEmision;
+        private $suplidor;
+        private $relacionSuplidor;
+        private $moneda;
+        private $valorOriginal;
+        private $tasaCambio;
+        private $valor;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numero
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumero()
-    {
-        return $this->numero;
-    }
+        /**
+         * Get the value of numero
+         */
 
-    /**
-     * Set the value of numero
-     *
-     * @return  self
-     */
+        public function getNumero()
+        {
+            return $this->numero;
+        }
 
-    public function setNumero($numero)
-    {
-        $this->numero = $numero;
+        /**
+         * Set the value of numero
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumero($numero)
+        {
+            $this->numero = $numero;
 
-    /**
-     * Get the value of fechaEmision
-     */
+            return $this;
+        }
 
-    public function getFechaEmision()
-    {
-        return $this->fechaEmision;
-    }
+        /**
+         * Get the value of fechaEmision
+         */
 
-    /**
-     * Set the value of fechaEmision
-     *
-     * @return  self
-     */
+        public function getFechaEmision()
+        {
+            return $this->fechaEmision;
+        }
 
-    public function setFechaEmision($fechaEmision)
-    {
-        $this->fechaEmision = $fechaEmision;
+        /**
+         * Set the value of fechaEmision
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaEmision($fechaEmision)
+        {
+            $this->fechaEmision = $fechaEmision;
 
-    /**
-     * Get the value of suplidor
-     */
+            return $this;
+        }
 
-    public function getSuplidor()
-    {
-        return $this->suplidor;
-    }
+        /**
+         * Get the value of suplidor
+         */
 
-    /**
-     * Set the value of suplidor
-     *
-     * @return  self
-     */
+        public function getSuplidor()
+        {
+            return $this->suplidor;
+        }
 
-    public function setSuplidor($suplidor)
-    {
-        $this->suplidor = $suplidor;
+        /**
+         * Set the value of suplidor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setSuplidor($suplidor)
+        {
+            $this->suplidor = $suplidor;
 
-    /**
-     * Get the value of relacionSuplidor
-     */
+            return $this;
+        }
 
-    public function getRelacionSuplidor()
-    {
-        return $this->relacionSuplidor;
-    }
+        /**
+         * Get the value of relacionSuplidor
+         */
 
-    /**
-     * Set the value of relacionSuplidor
-     *
-     * @return  self
-     */
+        public function getRelacionSuplidor()
+        {
+            return $this->relacionSuplidor;
+        }
 
-    public function setRelacionSuplidor($relacionSuplidor)
-    {
-        $this->relacionSuplidor = $relacionSuplidor;
+        /**
+         * Set the value of relacionSuplidor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setRelacionSuplidor($relacionSuplidor)
+        {
+            $this->relacionSuplidor = $relacionSuplidor;
 
-    /**
-     * Get the value of moneda
-     */
+            return $this;
+        }
 
-    public function getMoneda()
-    {
-        return $this->moneda;
-    }
+        /**
+         * Get the value of moneda
+         */
 
-    /**
-     * Set the value of moneda
-     *
-     * @return  self
-     */
+        public function getMoneda()
+        {
+            return $this->moneda;
+        }
 
-    public function setMoneda($moneda)
-    {
-        $this->moneda = $moneda;
+        /**
+         * Set the value of moneda
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setMoneda($moneda)
+        {
+            $this->moneda = $moneda;
 
-    /**
-     * Get the value of valorOriginal
-     */
+            return $this;
+        }
 
-    public function getValorOriginal()
-    {
-        return $this->valorOriginal;
-    }
+        /**
+         * Get the value of valorOriginal
+         */
 
-    /**
-     * Set the value of valorOriginal
-     *
-     * @return  self
-     */
+        public function getValorOriginal()
+        {
+            return $this->valorOriginal;
+        }
 
-    public function setValorOriginal($valorOriginal)
-    {
-        $this->valorOriginal = $valorOriginal;
+        /**
+         * Set the value of valorOriginal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setValorOriginal($valorOriginal)
+        {
+            $this->valorOriginal = $valorOriginal;
 
-    /**
-     * Get the value of tasaCambio
-     */
+            return $this;
+        }
 
-    public function getTasaCambio()
-    {
-        return $this->tasaCambio;
-    }
+        /**
+         * Get the value of tasaCambio
+         */
 
-    /**
-     * Set the value of tasaCambio
-     *
-     * @return  self
-     */
+        public function getTasaCambio()
+        {
+            return $this->tasaCambio;
+        }
 
-    public function setTasaCambio($tasaCambio)
-    {
-        $this->tasaCambio = $tasaCambio;
+        /**
+         * Set the value of tasaCambio
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTasaCambio($tasaCambio)
+        {
+            $this->tasaCambio = $tasaCambio;
 
-    /**
-     * Get the value of valor
-     */
+            return $this;
+        }
 
-    public function getValor()
-    {
-        return $this->valor;
-    }
+        /**
+         * Get the value of valor
+         */
 
-    /**
-     * Set the value of valor
-     *
-     * @return  self
-     */
+        public function getValor()
+        {
+            return $this->valor;
+        }
 
-    public function setValor($valor)
-    {
-        $this->valor = $valor;
+        /**
+         * Set the value of valor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setValor($valor)
+        {
+            $this->valor = $valor;
+
+            return $this;
+        }
+    } ?>
 

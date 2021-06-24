@@ -1,133 +1,135 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ImportadorExportadorConsultarRq
-{
-    //VARIABLES
-    private $tipoDocumento;
-    private $numeroDocumento;
-    private $clasificacion;
-    private $paisOrigen;
-    private $paisDestino;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class ImportadorExportadorConsultarRq
     {
-        //
-    }
+        //VARIABLES
+        private $tipoDocumento;
+        private $numeroDocumento;
+        private $clasificacion;
+        private $paisOrigen;
+        private $paisDestino;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of tipoDocumento
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getTipoDocumento()
-    {
-        return $this->tipoDocumento;
-    }
+        /**
+         * Get the value of tipoDocumento
+         */
 
-    /**
-     * Set the value of tipoDocumento
-     *
-     * @return  self
-     */
+        public function getTipoDocumento()
+        {
+            return $this->tipoDocumento;
+        }
 
-    public function setTipoDocumento($tipoDocumento)
-    {
-        $this->tipoDocumento = $tipoDocumento;
+        /**
+         * Set the value of tipoDocumento
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoDocumento($tipoDocumento)
+        {
+            $this->tipoDocumento = $tipoDocumento;
 
-    /**
-     * Get the value of numeroDocumento
-     */
+            return $this;
+        }
 
-    public function getNumeroDocumento()
-    {
-        return $this->numeroDocumento;
-    }
+        /**
+         * Get the value of numeroDocumento
+         */
 
-    /**
-     * Set the value of numeroDocumento
-     *
-     * @return  self
-     */
+        public function getNumeroDocumento()
+        {
+            return $this->numeroDocumento;
+        }
 
-    public function setNumeroDocumento($numeroDocumento)
-    {
-        $this->numeroDocumento = $numeroDocumento;
+        /**
+         * Set the value of numeroDocumento
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroDocumento($numeroDocumento)
+        {
+            $this->numeroDocumento = $numeroDocumento;
 
-    /**
-     * Get the value of clasificacion
-     */
+            return $this;
+        }
 
-    public function getClasificacion()
-    {
-        return $this->clasificacion;
-    }
+        /**
+         * Get the value of clasificacion
+         */
 
-    /**
-     * Set the value of clasificacion
-     *
-     * @return  self
-     */
+        public function getClasificacion()
+        {
+            return $this->clasificacion;
+        }
 
-    public function setClasificacion($clasificacion)
-    {
-        $this->clasificacion = $clasificacion;
+        /**
+         * Set the value of clasificacion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setClasificacion($clasificacion)
+        {
+            $this->clasificacion = $clasificacion;
 
-    /**
-     * Get the value of paisOrigen
-     */
+            return $this;
+        }
 
-    public function getPaisOrigen()
-    {
-        return $this->paisOrigen;
-    }
+        /**
+         * Get the value of paisOrigen
+         */
 
-    /**
-     * Set the value of paisOrigen
-     *
-     * @return  self
-     */
+        public function getPaisOrigen()
+        {
+            return $this->paisOrigen;
+        }
 
-    public function setPaisOrigen($paisOrigen)
-    {
-        $this->paisOrigen = $paisOrigen;
+        /**
+         * Set the value of paisOrigen
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPaisOrigen($paisOrigen)
+        {
+            $this->paisOrigen = $paisOrigen;
 
-    /**
-     * Get the value of paisDestino
-     */
+            return $this;
+        }
 
-    public function getPaisDestino()
-    {
-        return $this->paisDestino;
-    }
+        /**
+         * Get the value of paisDestino
+         */
 
-    /**
-     * Set the value of paisDestino
-     *
-     * @return  self
-     */
+        public function getPaisDestino()
+        {
+            return $this->paisDestino;
+        }
 
-    public function setPaisDestino($paisDestino)
-    {
-        $this->paisDestino = $paisDestino;
+        /**
+         * Set the value of paisDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setPaisDestino($paisDestino)
+        {
+            $this->paisDestino = $paisDestino;
+
+            return $this;
+        }
+    } ?>
 
 
 

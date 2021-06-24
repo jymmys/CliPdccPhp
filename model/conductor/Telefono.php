@@ -2,53 +2,64 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Telefono
-{
-    private string $MOVIL;
-    private string $FIJO;
+<?php
 
-    /**
-     * Get the value of MOVIL
-     */
-
-    public function getMOVIL()
+    class Telefono
     {
-        return $this->MOVIL;
-    }
+        //Variables
+        private string $MOVIL;
+        private string $FIJO;
 
-    /**
-     * Set the value of MOVIL
-     *
-     * @return  self
-     */
 
-    public function setMOVIL($MOVIL)
-    {
-        $this->MOVIL = $MOVIL;
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-        return $this;
-    }
+        // METODOS GETTERS y SETTERS
+        /**
+         * Get the value of MOVIL
+         */
 
-    /**
-     * Get the value of FIJO
-     */
+        public function getMOVIL()
+        {
+            return $this->MOVIL;
+        }
 
-    public function getFIJO()
-    {
-        return $this->FIJO;
-    }
+        /**
+         * Set the value of MOVIL
+         *
+         * @return  self
+         */
 
-    /**
-     * Set the value of FIJO
-     *
-     * @return  self
-     */
+        public function setMOVIL($MOVIL)
+        {
+            $this->MOVIL = $MOVIL;
 
-    public function setFIJO($FIJO)
-    {
-        $this->FIJO = $FIJO;
+            return $this;
+        }
 
-        return $this;
-    }
-} ?>
+        /**
+         * Get the value of FIJO
+         */
+
+        public function getFIJO()
+        {
+            return $this->FIJO;
+        }
+
+        /**
+         * Set the value of FIJO
+         *
+         * @return  self
+         */
+
+        public function setFIJO($FIJO)
+        {
+            $this->FIJO = $FIJO;
+
+            return $this;
+        }
+    } ?>
 

@@ -1,155 +1,157 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Impuesto
-{
-    //VARIABLES
-    private $tipoImpuesto;
-    private $regimenImpuesto;
-    private $montoCalculado;
-    private $montoPagar;
-    private $multaPagar;
-    private $otrosCargos;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Impuesto
     {
-        //
-    }
+        //VARIABLES
+        private $tipoImpuesto;
+        private $regimenImpuesto;
+        private $montoCalculado;
+        private $montoPagar;
+        private $multaPagar;
+        private $otrosCargos;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of tipoImpuesto
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getTipoImpuesto()
-    {
-        return $this->tipoImpuesto;
-    }
+        /**
+         * Get the value of tipoImpuesto
+         */
 
-    /**
-     * Set the value of tipoImpuesto
-     *
-     * @return  self
-     */
+        public function getTipoImpuesto()
+        {
+            return $this->tipoImpuesto;
+        }
 
-    public function setTipoImpuesto($tipoImpuesto)
-    {
-        $this->tipoImpuesto = $tipoImpuesto;
+        /**
+         * Set the value of tipoImpuesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoImpuesto($tipoImpuesto)
+        {
+            $this->tipoImpuesto = $tipoImpuesto;
 
-    /**
-     * Get the value of regimenImpuesto
-     */
+            return $this;
+        }
 
-    public function getRegimenImpuesto()
-    {
-        return $this->regimenImpuesto;
-    }
+        /**
+         * Get the value of regimenImpuesto
+         */
 
-    /**
-     * Set the value of regimenImpuesto
-     *
-     * @return  self
-     */
+        public function getRegimenImpuesto()
+        {
+            return $this->regimenImpuesto;
+        }
 
-    public function setRegimenImpuesto($regimenImpuesto)
-    {
-        $this->regimenImpuesto = $regimenImpuesto;
+        /**
+         * Set the value of regimenImpuesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setRegimenImpuesto($regimenImpuesto)
+        {
+            $this->regimenImpuesto = $regimenImpuesto;
 
-    /**
-     * Get the value of montoCalculado
-     */
+            return $this;
+        }
 
-    public function getMontoCalculado()
-    {
-        return $this->montoCalculado;
-    }
+        /**
+         * Get the value of montoCalculado
+         */
 
-    /**
-     * Set the value of montoCalculado
-     *
-     * @return  self
-     */
+        public function getMontoCalculado()
+        {
+            return $this->montoCalculado;
+        }
 
-    public function setMontoCalculado($montoCalculado)
-    {
-        $this->montoCalculado = $montoCalculado;
+        /**
+         * Set the value of montoCalculado
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setMontoCalculado($montoCalculado)
+        {
+            $this->montoCalculado = $montoCalculado;
 
-    /**
-     * Get the value of montoPagar
-     */
+            return $this;
+        }
 
-    public function getMontoPagar()
-    {
-        return $this->montoPagar;
-    }
+        /**
+         * Get the value of montoPagar
+         */
 
-    /**
-     * Set the value of montoPagar
-     *
-     * @return  self
-     */
+        public function getMontoPagar()
+        {
+            return $this->montoPagar;
+        }
 
-    public function setMontoPagar($montoPagar)
-    {
-        $this->montoPagar = $montoPagar;
+        /**
+         * Set the value of montoPagar
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setMontoPagar($montoPagar)
+        {
+            $this->montoPagar = $montoPagar;
 
-    /**
-     * Get the value of multaPagar
-     */
+            return $this;
+        }
 
-    public function getMultaPagar()
-    {
-        return $this->multaPagar;
-    }
+        /**
+         * Get the value of multaPagar
+         */
 
-    /**
-     * Set the value of multaPagar
-     *
-     * @return  self
-     */
+        public function getMultaPagar()
+        {
+            return $this->multaPagar;
+        }
 
-    public function setMultaPagar($multaPagar)
-    {
-        $this->multaPagar = $multaPagar;
+        /**
+         * Set the value of multaPagar
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setMultaPagar($multaPagar)
+        {
+            $this->multaPagar = $multaPagar;
 
-    /**
-     * Get the value of otrosCargos
-     */
+            return $this;
+        }
 
-    public function getOtrosCargos()
-    {
-        return $this->otrosCargos;
-    }
+        /**
+         * Get the value of otrosCargos
+         */
 
-    /**
-     * Set the value of otrosCargos
-     *
-     * @return  self
-     */
+        public function getOtrosCargos()
+        {
+            return $this->otrosCargos;
+        }
 
-    public function setOtrosCargos($otrosCargos)
-    {
-        $this->otrosCargos = $otrosCargos;
+        /**
+         * Set the value of otrosCargos
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setOtrosCargos($otrosCargos)
+        {
+            $this->otrosCargos = $otrosCargos;
+
+            return $this;
+        }
+    } ?>
 
 

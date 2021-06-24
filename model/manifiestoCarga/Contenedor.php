@@ -1,177 +1,179 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Contenedor
-{
-    //VARIABLES
-    private $idContenedor;
-    private $codigoIso;
-    private $tipoContenedor;
-    private $tamanoContenedor;
-    private $estadoContenedor;
-    private $peso;
-    private $numeroMarchamo;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Contenedor
     {
-        //
-    }
+        //VARIABLES
+        private $idContenedor;
+        private $codigoIso;
+        private $tipoContenedor;
+        private $tamanoContenedor;
+        private $estadoContenedor;
+        private $peso;
+        private $numeroMarchamo;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of idContenedor
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getIdContenedor()
-    {
-        return $this->idContenedor;
-    }
+        /**
+         * Get the value of idContenedor
+         */
 
-    /**
-     * Set the value of idContenedor
-     *
-     * @return  self
-     */
+        public function getIdContenedor()
+        {
+            return $this->idContenedor;
+        }
 
-    public function setIdContenedor($idContenedor)
-    {
-        $this->idContenedor = $idContenedor;
+        /**
+         * Set the value of idContenedor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setIdContenedor($idContenedor)
+        {
+            $this->idContenedor = $idContenedor;
 
-    /**
-     * Get the value of codigoIso
-     */
+            return $this;
+        }
 
-    public function getCodigoIso()
-    {
-        return $this->codigoIso;
-    }
+        /**
+         * Get the value of codigoIso
+         */
 
-    /**
-     * Set the value of codigoIso
-     *
-     * @return  self
-     */
+        public function getCodigoIso()
+        {
+            return $this->codigoIso;
+        }
 
-    public function setCodigoIso($codigoIso)
-    {
-        $this->codigoIso = $codigoIso;
+        /**
+         * Set the value of codigoIso
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoIso($codigoIso)
+        {
+            $this->codigoIso = $codigoIso;
 
-    /**
-     * Get the value of tipoContenedor
-     */
+            return $this;
+        }
 
-    public function getTipoContenedor()
-    {
-        return $this->tipoContenedor;
-    }
+        /**
+         * Get the value of tipoContenedor
+         */
 
-    /**
-     * Set the value of tipoContenedor
-     *
-     * @return  self
-     */
+        public function getTipoContenedor()
+        {
+            return $this->tipoContenedor;
+        }
 
-    public function setTipoContenedor($tipoContenedor)
-    {
-        $this->tipoContenedor = $tipoContenedor;
+        /**
+         * Set the value of tipoContenedor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoContenedor($tipoContenedor)
+        {
+            $this->tipoContenedor = $tipoContenedor;
 
-    /**
-     * Get the value of tamanoContenedor
-     */
+            return $this;
+        }
 
-    public function getTamanoContenedor()
-    {
-        return $this->tamanoContenedor;
-    }
+        /**
+         * Get the value of tamanoContenedor
+         */
 
-    /**
-     * Set the value of tamanoContenedor
-     *
-     * @return  self
-     */
+        public function getTamanoContenedor()
+        {
+            return $this->tamanoContenedor;
+        }
 
-    public function setTamanoContenedor($tamanoContenedor)
-    {
-        $this->tamanoContenedor = $tamanoContenedor;
+        /**
+         * Set the value of tamanoContenedor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTamanoContenedor($tamanoContenedor)
+        {
+            $this->tamanoContenedor = $tamanoContenedor;
 
-    /**
-     * Get the value of estadoContenedor
-     */
+            return $this;
+        }
 
-    public function getEstadoContenedor()
-    {
-        return $this->estadoContenedor;
-    }
+        /**
+         * Get the value of estadoContenedor
+         */
 
-    /**
-     * Set the value of estadoContenedor
-     *
-     * @return  self
-     */
+        public function getEstadoContenedor()
+        {
+            return $this->estadoContenedor;
+        }
 
-    public function setEstadoContenedor($estadoContenedor)
-    {
-        $this->estadoContenedor = $estadoContenedor;
+        /**
+         * Set the value of estadoContenedor
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setEstadoContenedor($estadoContenedor)
+        {
+            $this->estadoContenedor = $estadoContenedor;
 
-    /**
-     * Get the value of peso
-     */
+            return $this;
+        }
 
-    public function getPeso()
-    {
-        return $this->peso;
-    }
+        /**
+         * Get the value of peso
+         */
 
-    /**
-     * Set the value of peso
-     *
-     * @return  self
-     */
+        public function getPeso()
+        {
+            return $this->peso;
+        }
 
-    public function setPeso($peso)
-    {
-        $this->peso = $peso;
+        /**
+         * Set the value of peso
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPeso($peso)
+        {
+            $this->peso = $peso;
 
-    /**
-     * Get the value of numeroMarchamo
-     */
+            return $this;
+        }
 
-    public function getNumeroMarchamo()
-    {
-        return $this->numeroMarchamo;
-    }
+        /**
+         * Get the value of numeroMarchamo
+         */
 
-    /**
-     * Set the value of numeroMarchamo
-     *
-     * @return  self
-     */
+        public function getNumeroMarchamo()
+        {
+            return $this->numeroMarchamo;
+        }
 
-    public function setNumeroMarchamo($numeroMarchamo)
-    {
-        $this->numeroMarchamo = $numeroMarchamo;
+        /**
+         * Set the value of numeroMarchamo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setNumeroMarchamo($numeroMarchamo)
+        {
+            $this->numeroMarchamo = $numeroMarchamo;
+
+            return $this;
+        }
+    } ?>
 

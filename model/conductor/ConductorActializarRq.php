@@ -1,35 +1,34 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Conductor
-{
-    private $Conductor;
+<?php
 
-    public function __construct()
+    class Conductor
     {
-    }
+        //Variable
+        private $Conductor;
 
-    //Variable
-    private $Conductor;
+    
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    // Constructor con Argumentos
-    function __construct($Conductor)
-    {
-        $this->Conductor = $Conductor;
-    }
+        // METODOS GETTERS y SETTERS
 
-    //Get
-    public function getConductor()
-    {
-        return $this->Conductor;
-    }
+        //Get
+        public function getConductor()
+        {
+            return $this->Conductor;
+        }
 
-    //Set
-    public function setConductor($Conductor)
-    {
-        $this->Conductor = $Conductor;
-        return $this;
+        //Set
+        public function setConductor($Conductor)
+        {
+            $this->Conductor = $Conductor;
+            return $this;
+        }
     }
-}
 
 ?>

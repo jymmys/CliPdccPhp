@@ -1,38 +1,44 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Solicitud
-{
-    private string $STATUS;
+<?php
 
-    //Constructor
-    public function __construct()
+    class Solicitud
     {
-        //
-    }
+        //Variables
+        private string $STATUS;
 
-    /**
-     * Get the value of STATUS
-     */
+        //Constructor
+        public function __construct()
+        {
+            //
+        }
+        
 
-    public function getSTATUS()
-    {
-        return $this->STATUS;
-    }
+        // METODOS GETTERS y SETTERS
 
-    /**
-     * Set the value of STATUS
-     *
-     * @return  self
-     */
+        /**
+         * Get the value of STATUS
+         */
 
-    public function setSTATUS($STATUS)
-    {
-        $this->STATUS = $STATUS;
+        public function getSTATUS()
+        {
+            return $this->STATUS;
+        }
 
-        return $this;
-    }
-} ?>
+        /**
+         * Set the value of STATUS
+         *
+         * @return  self
+         */
+
+        public function setSTATUS($STATUS)
+        {
+            $this->STATUS = $STATUS;
+
+            return $this;
+        }
+    } ?>
 
 
 

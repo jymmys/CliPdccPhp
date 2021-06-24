@@ -1,109 +1,111 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class XXXXXXX
-{
-    //VARIABLES
-    private $codigoPaisExpedicion;
-    private $codigoPaisDestino;
-    private $pesoBrutoTotal;
-    private $numeroDuca;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class XXXXXXX
     {
-        //
-    }
+        //VARIABLES
+        private $codigoPaisExpedicion;
+        private $codigoPaisDestino;
+        private $pesoBrutoTotal;
+        private $numeroDuca;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of codigoPaisExpedicion
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getCodigoPaisExpedicion()
-    {
-        return $this->codigoPaisExpedicion;
-    }
+        /**
+         * Get the value of codigoPaisExpedicion
+         */
 
-    /**
-     * Set the value of codigoPaisExpedicion
-     *
-     * @return  self
-     */
+        public function getCodigoPaisExpedicion()
+        {
+            return $this->codigoPaisExpedicion;
+        }
 
-    public function setCodigoPaisExpedicion($codigoPaisExpedicion)
-    {
-        $this->codigoPaisExpedicion = $codigoPaisExpedicion;
+        /**
+         * Set the value of codigoPaisExpedicion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoPaisExpedicion($codigoPaisExpedicion)
+        {
+            $this->codigoPaisExpedicion = $codigoPaisExpedicion;
 
-    /**
-     * Get the value of codigoPaisDestino
-     */
+            return $this;
+        }
 
-    public function getCodigoPaisDestino()
-    {
-        return $this->codigoPaisDestino;
-    }
+        /**
+         * Get the value of codigoPaisDestino
+         */
 
-    /**
-     * Set the value of codigoPaisDestino
-     *
-     * @return  self
-     */
+        public function getCodigoPaisDestino()
+        {
+            return $this->codigoPaisDestino;
+        }
 
-    public function setCodigoPaisDestino($codigoPaisDestino)
-    {
-        $this->codigoPaisDestino = $codigoPaisDestino;
+        /**
+         * Set the value of codigoPaisDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoPaisDestino($codigoPaisDestino)
+        {
+            $this->codigoPaisDestino = $codigoPaisDestino;
 
-    /**
-     * Get the value of pesoBrutoTotal
-     */
+            return $this;
+        }
 
-    public function getPesoBrutoTotal()
-    {
-        return $this->pesoBrutoTotal;
-    }
+        /**
+         * Get the value of pesoBrutoTotal
+         */
 
-    /**
-     * Set the value of pesoBrutoTotal
-     *
-     * @return  self
-     */
+        public function getPesoBrutoTotal()
+        {
+            return $this->pesoBrutoTotal;
+        }
 
-    public function setPesoBrutoTotal($pesoBrutoTotal)
-    {
-        $this->pesoBrutoTotal = $pesoBrutoTotal;
+        /**
+         * Set the value of pesoBrutoTotal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPesoBrutoTotal($pesoBrutoTotal)
+        {
+            $this->pesoBrutoTotal = $pesoBrutoTotal;
 
-    /**
-     * Get the value of numeroDuca
-     */
+            return $this;
+        }
 
-    public function getNumeroDuca()
-    {
-        return $this->numeroDuca;
-    }
+        /**
+         * Get the value of numeroDuca
+         */
 
-    /**
-     * Set the value of numeroDuca
-     *
-     * @return  self
-     */
+        public function getNumeroDuca()
+        {
+            return $this->numeroDuca;
+        }
 
-    public function setNumeroDuca($numeroDuca)
-    {
-        $this->numeroDuca = $numeroDuca;
+        /**
+         * Set the value of numeroDuca
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setNumeroDuca($numeroDuca)
+        {
+            $this->numeroDuca = $numeroDuca;
+
+            return $this;
+        }
+    } ?>
 
 

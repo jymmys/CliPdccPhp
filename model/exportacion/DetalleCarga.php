@@ -1,201 +1,203 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class DetalleCarga
-{
-    //VARIABLES
-    private $pesoBrutoTotal;
-    private $valorFobTotal;
-    private $acuerdo;
-    private $gastoTransporte;
-    private $totalValorSeguro;
-    private $cantidadTotalBultos;
-    private $depositoDestino;
-    private $zona;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class DetalleCarga
     {
-        //
-    }
+        //VARIABLES
+        private $pesoBrutoTotal;
+        private $valorFobTotal;
+        private $acuerdo;
+        private $gastoTransporte;
+        private $totalValorSeguro;
+        private $cantidadTotalBultos;
+        private $depositoDestino;
+        private $zona;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of pesoBrutoTotal
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getPesoBrutoTotal()
-    {
-        return $this->pesoBrutoTotal;
-    }
+        /**
+         * Get the value of pesoBrutoTotal
+         */
 
-    /**
-     * Set the value of pesoBrutoTotal
-     *
-     * @return  self
-     */
+        public function getPesoBrutoTotal()
+        {
+            return $this->pesoBrutoTotal;
+        }
 
-    public function setPesoBrutoTotal($pesoBrutoTotal)
-    {
-        $this->pesoBrutoTotal = $pesoBrutoTotal;
+        /**
+         * Set the value of pesoBrutoTotal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPesoBrutoTotal($pesoBrutoTotal)
+        {
+            $this->pesoBrutoTotal = $pesoBrutoTotal;
 
-    /**
-     * Get the value of valorFobTotal
-     */
+            return $this;
+        }
 
-    public function getValorFobTotal()
-    {
-        return $this->valorFobTotal;
-    }
+        /**
+         * Get the value of valorFobTotal
+         */
 
-    /**
-     * Set the value of valorFobTotal
-     *
-     * @return  self
-     */
+        public function getValorFobTotal()
+        {
+            return $this->valorFobTotal;
+        }
 
-    public function setValorFobTotal($valorFobTotal)
-    {
-        $this->valorFobTotal = $valorFobTotal;
+        /**
+         * Set the value of valorFobTotal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setValorFobTotal($valorFobTotal)
+        {
+            $this->valorFobTotal = $valorFobTotal;
 
-    /**
-     * Get the value of acuerdo
-     */
+            return $this;
+        }
 
-    public function getAcuerdo()
-    {
-        return $this->acuerdo;
-    }
+        /**
+         * Get the value of acuerdo
+         */
 
-    /**
-     * Set the value of acuerdo
-     *
-     * @return  self
-     */
+        public function getAcuerdo()
+        {
+            return $this->acuerdo;
+        }
 
-    public function setAcuerdo($acuerdo)
-    {
-        $this->acuerdo = $acuerdo;
+        /**
+         * Set the value of acuerdo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setAcuerdo($acuerdo)
+        {
+            $this->acuerdo = $acuerdo;
 
-    /**
-     * Get the value of gastoTransporte
-     */
+            return $this;
+        }
 
-    public function getGastoTransporte()
-    {
-        return $this->gastoTransporte;
-    }
+        /**
+         * Get the value of gastoTransporte
+         */
 
-    /**
-     * Set the value of gastoTransporte
-     *
-     * @return  self
-     */
+        public function getGastoTransporte()
+        {
+            return $this->gastoTransporte;
+        }
 
-    public function setGastoTransporte($gastoTransporte)
-    {
-        $this->gastoTransporte = $gastoTransporte;
+        /**
+         * Set the value of gastoTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setGastoTransporte($gastoTransporte)
+        {
+            $this->gastoTransporte = $gastoTransporte;
 
-    /**
-     * Get the value of totalValorSeguro
-     */
+            return $this;
+        }
 
-    public function getTotalValorSeguro()
-    {
-        return $this->totalValorSeguro;
-    }
+        /**
+         * Get the value of totalValorSeguro
+         */
 
-    /**
-     * Set the value of totalValorSeguro
-     *
-     * @return  self
-     */
+        public function getTotalValorSeguro()
+        {
+            return $this->totalValorSeguro;
+        }
 
-    public function setTotalValorSeguro($totalValorSeguro)
-    {
-        $this->totalValorSeguro = $totalValorSeguro;
+        /**
+         * Set the value of totalValorSeguro
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTotalValorSeguro($totalValorSeguro)
+        {
+            $this->totalValorSeguro = $totalValorSeguro;
 
-    /**
-     * Get the value of cantidadTotalBultos
-     */
+            return $this;
+        }
 
-    public function getCantidadTotalBultos()
-    {
-        return $this->cantidadTotalBultos;
-    }
+        /**
+         * Get the value of cantidadTotalBultos
+         */
 
-    /**
-     * Set the value of cantidadTotalBultos
-     *
-     * @return  self
-     */
+        public function getCantidadTotalBultos()
+        {
+            return $this->cantidadTotalBultos;
+        }
 
-    public function setCantidadTotalBultos($cantidadTotalBultos)
-    {
-        $this->cantidadTotalBultos = $cantidadTotalBultos;
+        /**
+         * Set the value of cantidadTotalBultos
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCantidadTotalBultos($cantidadTotalBultos)
+        {
+            $this->cantidadTotalBultos = $cantidadTotalBultos;
 
-    /**
-     * Get the value of depositoDestino
-     */
+            return $this;
+        }
 
-    public function getDepositoDestino()
-    {
-        return $this->depositoDestino;
-    }
+        /**
+         * Get the value of depositoDestino
+         */
 
-    /**
-     * Set the value of depositoDestino
-     *
-     * @return  self
-     */
+        public function getDepositoDestino()
+        {
+            return $this->depositoDestino;
+        }
 
-    public function setDepositoDestino($depositoDestino)
-    {
-        $this->depositoDestino = $depositoDestino;
+        /**
+         * Set the value of depositoDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDepositoDestino($depositoDestino)
+        {
+            $this->depositoDestino = $depositoDestino;
 
-    /**
-     * Get the value of zona
-     */
+            return $this;
+        }
 
-    public function getZona()
-    {
-        return $this->zona;
-    }
+        /**
+         * Get the value of zona
+         */
 
-    /**
-     * Set the value of zona
-     *
-     * @return  self
-     */
+        public function getZona()
+        {
+            return $this->zona;
+        }
 
-    public function setZona($zona)
-    {
-        $this->zona = $zona;
+        /**
+         * Set the value of zona
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setZona($zona)
+        {
+            $this->zona = $zona;
+
+            return $this;
+        }
+    } ?>
 
 

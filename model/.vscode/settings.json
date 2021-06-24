@@ -1,5 +1,6 @@
 {
     "phpConstructor.chooseConstructorVisibility": true,
     "phpConstructor.choosePropertyVisibility": true,
-    "phpGettersSetters.templatesDir": ""
+    "phpGettersSetters.templatesDir": "",
+   
 }

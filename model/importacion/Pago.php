@@ -1,108 +1,110 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Pago
-{
-    //VARIABLES
-    private $medioPago;
-    private $otrosGastosTotal;
-    private $valorTransaccionTotal;
-    private $garantia;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Pago
     {
-        //
-    }
+        //VARIABLES
+        private $medioPago;
+        private $otrosGastosTotal;
+        private $valorTransaccionTotal;
+        private $garantia;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of medioPago
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getMedioPago()
-    {
-        return $this->medioPago;
-    }
+        /**
+         * Get the value of medioPago
+         */
 
-    /**
-     * Set the value of medioPago
-     *
-     * @return  self
-     */
+        public function getMedioPago()
+        {
+            return $this->medioPago;
+        }
 
-    public function setMedioPago($medioPago)
-    {
-        $this->medioPago = $medioPago;
+        /**
+         * Set the value of medioPago
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setMedioPago($medioPago)
+        {
+            $this->medioPago = $medioPago;
 
-    /**
-     * Get the value of otrosGastosTotal
-     */
+            return $this;
+        }
 
-    public function getOtrosGastosTotal()
-    {
-        return $this->otrosGastosTotal;
-    }
+        /**
+         * Get the value of otrosGastosTotal
+         */
 
-    /**
-     * Set the value of otrosGastosTotal
-     *
-     * @return  self
-     */
+        public function getOtrosGastosTotal()
+        {
+            return $this->otrosGastosTotal;
+        }
 
-    public function setOtrosGastosTotal($otrosGastosTotal)
-    {
-        $this->otrosGastosTotal = $otrosGastosTotal;
+        /**
+         * Set the value of otrosGastosTotal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setOtrosGastosTotal($otrosGastosTotal)
+        {
+            $this->otrosGastosTotal = $otrosGastosTotal;
 
-    /**
-     * Get the value of valorTransaccionTotal
-     */
+            return $this;
+        }
 
-    public function getValorTransaccionTotal()
-    {
-        return $this->valorTransaccionTotal;
-    }
+        /**
+         * Get the value of valorTransaccionTotal
+         */
 
-    /**
-     * Set the value of valorTransaccionTotal
-     *
-     * @return  self
-     */
+        public function getValorTransaccionTotal()
+        {
+            return $this->valorTransaccionTotal;
+        }
 
-    public function setValorTransaccionTotal($valorTransaccionTotal)
-    {
-        $this->valorTransaccionTotal = $valorTransaccionTotal;
+        /**
+         * Set the value of valorTransaccionTotal
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setValorTransaccionTotal($valorTransaccionTotal)
+        {
+            $this->valorTransaccionTotal = $valorTransaccionTotal;
 
-    /**
-     * Get the value of garantia
-     */
+            return $this;
+        }
 
-    public function getGarantia()
-    {
-        return $this->garantia;
-    }
+        /**
+         * Get the value of garantia
+         */
 
-    /**
-     * Set the value of garantia
-     *
-     * @return  self
-     */
+        public function getGarantia()
+        {
+            return $this->garantia;
+        }
 
-    public function setGarantia($garantia)
-    {
-        $this->garantia = $garantia;
+        /**
+         * Set the value of garantia
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setGarantia($garantia)
+        {
+            $this->garantia = $garantia;
+
+            return $this;
+        }
+    } ?>
 

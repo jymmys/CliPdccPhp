@@ -1,76 +1,81 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ConductorAsociarTransportistaRq
-{
-    private $CODIGO_CONDUCTOR;
-    private $CODIGO_TRANSPORTISTA;
-    private $ODIGO_CONDUCTOR;
+<?php
 
-    public function __construct()
+    class ConductorAsociarTransportistaRq
     {
-    }
+        private $CODIGO_CONDUCTOR;
+        private $CODIGO_TRANSPORTISTA;
+        private $ODIGO_CONDUCTOR;
 
-    /**
-     * Get the value of CODIGO_CONDUCTOR
-     */
-    public function getCODIGO_CONDUCTOR()
-    {
-        return $this->CODIGO_CONDUCTOR;
-    }
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Set the value of CODIGO_CONDUCTOR
-     *
-     * @return  self
-     */
-    public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
-    {
-        $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+        // METODOS GETTERS y SETTERS
+        /**
+         * Get the value of CODIGO_CONDUCTOR
+         */
+        public function getCODIGO_CONDUCTOR()
+        {
+            return $this->CODIGO_CONDUCTOR;
+        }
 
-        return $this;
-    }
+        /**
+         * Set the value of CODIGO_CONDUCTOR
+         *
+         * @return  self
+         */
+        public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
+        {
+            $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
 
-    /**
-     * Get the value of CODIGO_TRANSPORTISTA
-     */
-    public function getCODIGO_TRANSPORTISTA()
-    {
-        return $this->CODIGO_TRANSPORTISTA;
-    }
+            return $this;
+        }
 
-    /**
-     * Set the value of CODIGO_TRANSPORTISTA
-     *
-     * @return  self
-     */
-    public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
-    {
-        $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+        /**
+         * Get the value of CODIGO_TRANSPORTISTA
+         */
+        public function getCODIGO_TRANSPORTISTA()
+        {
+            return $this->CODIGO_TRANSPORTISTA;
+        }
 
-        return $this;
-    }
+        /**
+         * Set the value of CODIGO_TRANSPORTISTA
+         *
+         * @return  self
+         */
+        public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
+        {
+            $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
 
-    /**
-     * Get the value of ODIGO_CONDUCTOR
-     */
-    public function getODIGO_CONDUCTOR()
-    {
-        return $this->ODIGO_CONDUCTOR;
-    }
+            return $this;
+        }
 
-    /**
-     * Set the value of ODIGO_CONDUCTOR
-     *
-     * @return  self
-     */
-    public function setODIGO_CONDUCTOR($ODIGO_CONDUCTOR)
-    {
-        $this->ODIGO_CONDUCTOR = $ODIGO_CONDUCTOR;
+        /**
+         * Get the value of ODIGO_CONDUCTOR
+         */
+        public function getODIGO_CONDUCTOR()
+        {
+            return $this->ODIGO_CONDUCTOR;
+        }
 
-        return $this;
-    }
-} ?>
+        /**
+         * Set the value of ODIGO_CONDUCTOR
+         *
+         * @return  self
+         */
+        public function setODIGO_CONDUCTOR($ODIGO_CONDUCTOR)
+        {
+            $this->ODIGO_CONDUCTOR = $ODIGO_CONDUCTOR;
+
+            return $this;
+        }
+    } ?>
 
 
 

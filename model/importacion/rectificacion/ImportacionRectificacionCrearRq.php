@@ -1,292 +1,294 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ImportacionRectificacionCrearRq
-{
-    //VARIABLES
-    private $Declarante;
-    private $Declaracion;
-    private $Factura;
-    private $Transporte;
-    private $DetalleCarga;
-    private $DetalleTransporte;
-    private $Exportador;
-    private $Importador;
-    private $Articulo = [[]]     //PENDIENTE
-    private $Impuesto;
-    private $Pago;
-    private $estado;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class ImportacionRectificacionCrearRq
     {
-        //
-    }
+        //VARIABLES
+        private $Declarante;
+        private $Declaracion;
+        private $Factura;
+        private $Transporte;
+        private $DetalleCarga;
+        private $DetalleTransporte;
+        private $Exportador;
+        private $Importador;
+        private $Articulo = array();
+        private $Impuesto;
+        private $Pago;
+        private $estado;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of Declarante
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getDeclarante()
-    {
-        return $this->Declarante;
-    }
+        /**
+         * Get the value of Declarante
+         */
 
-    /**
-     * Set the value of Declarante
-     *
-     * @return  self
-     */
+        public function getDeclarante()
+        {
+            return $this->Declarante;
+        }
 
-    public function setDeclarante($Declarante)
-    {
-        $this->Declarante = $Declarante;
+        /**
+         * Set the value of Declarante
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDeclarante($Declarante)
+        {
+            $this->Declarante = $Declarante;
 
-    /**
-     * Get the value of Declaracion
-     */
+            return $this;
+        }
 
-    public function getDeclaracion()
-    {
-        return $this->Declaracion;
-    }
+        /**
+         * Get the value of Declaracion
+         */
 
-    /**
-     * Set the value of Declaracion
-     *
-     * @return  self
-     */
+        public function getDeclaracion()
+        {
+            return $this->Declaracion;
+        }
 
-    public function setDeclaracion($Declaracion)
-    {
-        $this->Declaracion = $Declaracion;
+        /**
+         * Set the value of Declaracion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDeclaracion($Declaracion)
+        {
+            $this->Declaracion = $Declaracion;
 
-    /**
-     * Get the value of Factura
-     */
+            return $this;
+        }
 
-    public function getFactura()
-    {
-        return $this->Factura;
-    }
+        /**
+         * Get the value of Factura
+         */
 
-    /**
-     * Set the value of Factura
-     *
-     * @return  self
-     */
+        public function getFactura()
+        {
+            return $this->Factura;
+        }
 
-    public function setFactura($Factura)
-    {
-        $this->Factura = $Factura;
+        /**
+         * Set the value of Factura
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFactura($Factura)
+        {
+            $this->Factura = $Factura;
 
-    /**
-     * Get the value of Transporte
-     */
+            return $this;
+        }
 
-    public function getTransporte()
-    {
-        return $this->Transporte;
-    }
+        /**
+         * Get the value of Transporte
+         */
 
-    /**
-     * Set the value of Transporte
-     *
-     * @return  self
-     */
+        public function getTransporte()
+        {
+            return $this->Transporte;
+        }
 
-    public function setTransporte($Transporte)
-    {
-        $this->Transporte = $Transporte;
+        /**
+         * Set the value of Transporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTransporte($Transporte)
+        {
+            $this->Transporte = $Transporte;
 
-    /**
-     * Get the value of DetalleCarga
-     */
+            return $this;
+        }
 
-    public function getDetalleCarga()
-    {
-        return $this->DetalleCarga;
-    }
+        /**
+         * Get the value of DetalleCarga
+         */
 
-    /**
-     * Set the value of DetalleCarga
-     *
-     * @return  self
-     */
+        public function getDetalleCarga()
+        {
+            return $this->DetalleCarga;
+        }
 
-    public function setDetalleCarga($DetalleCarga)
-    {
-        $this->DetalleCarga = $DetalleCarga;
+        /**
+         * Set the value of DetalleCarga
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDetalleCarga($DetalleCarga)
+        {
+            $this->DetalleCarga = $DetalleCarga;
 
-    /**
-     * Get the value of DetalleTransporte
-     */
+            return $this;
+        }
 
-    public function getDetalleTransporte()
-    {
-        return $this->DetalleTransporte;
-    }
+        /**
+         * Get the value of DetalleTransporte
+         */
 
-    /**
-     * Set the value of DetalleTransporte
-     *
-     * @return  self
-     */
+        public function getDetalleTransporte()
+        {
+            return $this->DetalleTransporte;
+        }
 
-    public function setDetalleTransporte($DetalleTransporte)
-    {
-        $this->DetalleTransporte = $DetalleTransporte;
+        /**
+         * Set the value of DetalleTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDetalleTransporte($DetalleTransporte)
+        {
+            $this->DetalleTransporte = $DetalleTransporte;
 
-    /**
-     * Get the value of Exportador
-     */
+            return $this;
+        }
 
-    public function getExportador()
-    {
-        return $this->Exportador;
-    }
+        /**
+         * Get the value of Exportador
+         */
 
-    /**
-     * Set the value of Exportador
-     *
-     * @return  self
-     */
+        public function getExportador()
+        {
+            return $this->Exportador;
+        }
 
-    public function setExportador($Exportador)
-    {
-        $this->Exportador = $Exportador;
+        /**
+         * Set the value of Exportador
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setExportador($Exportador)
+        {
+            $this->Exportador = $Exportador;
 
-    /**
-     * Get the value of Importador
-     */
+            return $this;
+        }
 
-    public function getImportador()
-    {
-        return $this->Importador;
-    }
+        /**
+         * Get the value of Importador
+         */
 
-    /**
-     * Set the value of Importador
-     *
-     * @return  self
-     */
+        public function getImportador()
+        {
+            return $this->Importador;
+        }
 
-    public function setImportador($Importador)
-    {
-        $this->Importador = $Importador;
+        /**
+         * Set the value of Importador
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setImportador($Importador)
+        {
+            $this->Importador = $Importador;
 
-    /**
-     * Get the value of Articulo
-     */
+            return $this;
+        }
 
-    public function getArticulo()
-    {
-        return $this->Articulo;
-    }
+        /**
+         * Get the value of Articulo
+         */
 
-    /**
-     * Set the value of Articulo
-     *
-     * @return  self
-     */
+        public function getArticulo()
+        {
+            return $this->Articulo;
+        }
 
-    public function setArticulo($Articulo)
-    {
-        $this->Articulo = $Articulo;
+        /**
+         * Set the value of Articulo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setArticulo($Articulo)
+        {
+            $this->Articulo = $Articulo;
 
-    /**
-     * Get the value of Impuesto
-     */
+            return $this;
+        }
 
-    public function getImpuesto()
-    {
-        return $this->Impuesto;
-    }
+        /**
+         * Get the value of Impuesto
+         */
 
-    /**
-     * Set the value of Impuesto
-     *
-     * @return  self
-     */
+        public function getImpuesto()
+        {
+            return $this->Impuesto;
+        }
 
-    public function setImpuesto($Impuesto)
-    {
-        $this->Impuesto = $Impuesto;
+        /**
+         * Set the value of Impuesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setImpuesto($Impuesto)
+        {
+            $this->Impuesto = $Impuesto;
 
-    /**
-     * Get the value of Pago
-     */
+            return $this;
+        }
 
-    public function getPago()
-    {
-        return $this->Pago;
-    }
+        /**
+         * Get the value of Pago
+         */
 
-    /**
-     * Set the value of Pago
-     *
-     * @return  self
-     */
+        public function getPago()
+        {
+            return $this->Pago;
+        }
 
-    public function setPago($Pago)
-    {
-        $this->Pago = $Pago;
+        /**
+         * Set the value of Pago
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPago($Pago)
+        {
+            $this->Pago = $Pago;
 
-    /**
-     * Get the value of estado
-     */
+            return $this;
+        }
 
-    public function getEstado()
-    {
-        return $this->estado;
-    }
+        /**
+         * Get the value of estado
+         */
 
-    /**
-     * Set the value of estado
-     *
-     * @return  self
-     */
+        public function getEstado()
+        {
+            return $this->estado;
+        }
 
-    public function setEstado($estado)
-    {
-        $this->estado = $estado;
+        /**
+         * Set the value of estado
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setEstado($estado)
+        {
+            $this->estado = $estado;
+
+            return $this;
+        }
+    } ?>
 

@@ -1,131 +1,133 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Declarante
-{
-    //VARIABLES
-    private $tipoDocumento;
-    private $numeroIdentificacion;
-    private $nombre;
-    private $codigo;
-    private $pais;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Declarante
     {
-        //
-    }
+        //VARIABLES
+        private $tipoDocumento;
+        private $numeroIdentificacion;
+        private $nombre;
+        private $codigo;
+        private $pais;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of tipoDocumento
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getTipoDocumento()
-    {
-        return $this->tipoDocumento;
-    }
+        /**
+         * Get the value of tipoDocumento
+         */
 
-    /**
-     * Set the value of tipoDocumento
-     *
-     * @return  self
-     */
+        public function getTipoDocumento()
+        {
+            return $this->tipoDocumento;
+        }
 
-    public function setTipoDocumento($tipoDocumento)
-    {
-        $this->tipoDocumento = $tipoDocumento;
+        /**
+         * Set the value of tipoDocumento
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoDocumento($tipoDocumento)
+        {
+            $this->tipoDocumento = $tipoDocumento;
 
-    /**
-     * Get the value of numeroIdentificacion
-     */
+            return $this;
+        }
 
-    public function getNumeroIdentificacion()
-    {
-        return $this->numeroIdentificacion;
-    }
+        /**
+         * Get the value of numeroIdentificacion
+         */
 
-    /**
-     * Set the value of numeroIdentificacion
-     *
-     * @return  self
-     */
+        public function getNumeroIdentificacion()
+        {
+            return $this->numeroIdentificacion;
+        }
 
-    public function setNumeroIdentificacion($numeroIdentificacion)
-    {
-        $this->numeroIdentificacion = $numeroIdentificacion;
+        /**
+         * Set the value of numeroIdentificacion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroIdentificacion($numeroIdentificacion)
+        {
+            $this->numeroIdentificacion = $numeroIdentificacion;
 
-    /**
-     * Get the value of nombre
-     */
+            return $this;
+        }
 
-    public function getNombre()
-    {
-        return $this->nombre;
-    }
+        /**
+         * Get the value of nombre
+         */
 
-    /**
-     * Set the value of nombre
-     *
-     * @return  self
-     */
+        public function getNombre()
+        {
+            return $this->nombre;
+        }
 
-    public function setNombre($nombre)
-    {
-        $this->nombre = $nombre;
+        /**
+         * Set the value of nombre
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNombre($nombre)
+        {
+            $this->nombre = $nombre;
 
-    /**
-     * Get the value of codigo
-     */
+            return $this;
+        }
 
-    public function getCodigo()
-    {
-        return $this->codigo;
-    }
+        /**
+         * Get the value of codigo
+         */
 
-    /**
-     * Set the value of codigo
-     *
-     * @return  self
-     */
+        public function getCodigo()
+        {
+            return $this->codigo;
+        }
 
-    public function setCodigo($codigo)
-    {
-        $this->codigo = $codigo;
+        /**
+         * Set the value of codigo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigo($codigo)
+        {
+            $this->codigo = $codigo;
 
-    /**
-     * Get the value of pais
-     */
+            return $this;
+        }
 
-    public function getPais()
-    {
-        return $this->pais;
-    }
+        /**
+         * Get the value of pais
+         */
 
-    /**
-     * Set the value of pais
-     *
-     * @return  self
-     */
+        public function getPais()
+        {
+            return $this->pais;
+        }
 
-    public function setPais($pais)
-    {
-        $this->pais = $pais;
+        /**
+         * Set the value of pais
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setPais($pais)
+        {
+            $this->pais = $pais;
+
+            return $this;
+        }
+    } ?>
 

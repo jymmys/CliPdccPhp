@@ -1,200 +1,202 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Exportador
-{
-    //VARIABLES
-    private $nombre;
-    private $direccion;
-    private $idTributaria;
-    private $tipoDocumento;
-    private $numeroDocumento;
-    private $pais;
-    private $telefonoContacto;
-    private $correoElectronico;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Exportador
     {
-        //
-    }
+        //VARIABLES
+        private $nombre;
+        private $direccion;
+        private $idTributaria;
+        private $tipoDocumento;
+        private $numeroDocumento;
+        private $pais;
+        private $telefonoContacto;
+        private $correoElectronico;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of nombre
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNombre()
-    {
-        return $this->nombre;
-    }
+        /**
+         * Get the value of nombre
+         */
 
-    /**
-     * Set the value of nombre
-     *
-     * @return  self
-     */
+        public function getNombre()
+        {
+            return $this->nombre;
+        }
 
-    public function setNombre($nombre)
-    {
-        $this->nombre = $nombre;
+        /**
+         * Set the value of nombre
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNombre($nombre)
+        {
+            $this->nombre = $nombre;
 
-    /**
-     * Get the value of direccion
-     */
+            return $this;
+        }
 
-    public function getDireccion()
-    {
-        return $this->direccion;
-    }
+        /**
+         * Get the value of direccion
+         */
 
-    /**
-     * Set the value of direccion
-     *
-     * @return  self
-     */
+        public function getDireccion()
+        {
+            return $this->direccion;
+        }
 
-    public function setDireccion($direccion)
-    {
-        $this->direccion = $direccion;
+        /**
+         * Set the value of direccion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDireccion($direccion)
+        {
+            $this->direccion = $direccion;
 
-    /**
-     * Get the value of idTributaria
-     */
+            return $this;
+        }
 
-    public function getIdTributaria()
-    {
-        return $this->idTributaria;
-    }
+        /**
+         * Get the value of idTributaria
+         */
 
-    /**
-     * Set the value of idTributaria
-     *
-     * @return  self
-     */
+        public function getIdTributaria()
+        {
+            return $this->idTributaria;
+        }
 
-    public function setIdTributaria($idTributaria)
-    {
-        $this->idTributaria = $idTributaria;
+        /**
+         * Set the value of idTributaria
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setIdTributaria($idTributaria)
+        {
+            $this->idTributaria = $idTributaria;
 
-    /**
-     * Get the value of tipoDocumento
-     */
+            return $this;
+        }
 
-    public function getTipoDocumento()
-    {
-        return $this->tipoDocumento;
-    }
+        /**
+         * Get the value of tipoDocumento
+         */
 
-    /**
-     * Set the value of tipoDocumento
-     *
-     * @return  self
-     */
+        public function getTipoDocumento()
+        {
+            return $this->tipoDocumento;
+        }
 
-    public function setTipoDocumento($tipoDocumento)
-    {
-        $this->tipoDocumento = $tipoDocumento;
+        /**
+         * Set the value of tipoDocumento
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoDocumento($tipoDocumento)
+        {
+            $this->tipoDocumento = $tipoDocumento;
 
-    /**
-     * Get the value of numeroDocumento
-     */
+            return $this;
+        }
 
-    public function getNumeroDocumento()
-    {
-        return $this->numeroDocumento;
-    }
+        /**
+         * Get the value of numeroDocumento
+         */
 
-    /**
-     * Set the value of numeroDocumento
-     *
-     * @return  self
-     */
+        public function getNumeroDocumento()
+        {
+            return $this->numeroDocumento;
+        }
 
-    public function setNumeroDocumento($numeroDocumento)
-    {
-        $this->numeroDocumento = $numeroDocumento;
+        /**
+         * Set the value of numeroDocumento
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroDocumento($numeroDocumento)
+        {
+            $this->numeroDocumento = $numeroDocumento;
 
-    /**
-     * Get the value of pais
-     */
+            return $this;
+        }
 
-    public function getPais()
-    {
-        return $this->pais;
-    }
+        /**
+         * Get the value of pais
+         */
 
-    /**
-     * Set the value of pais
-     *
-     * @return  self
-     */
+        public function getPais()
+        {
+            return $this->pais;
+        }
 
-    public function setPais($pais)
-    {
-        $this->pais = $pais;
+        /**
+         * Set the value of pais
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPais($pais)
+        {
+            $this->pais = $pais;
 
-    /**
-     * Get the value of telefonoContacto
-     */
+            return $this;
+        }
 
-    public function getTelefonoContacto()
-    {
-        return $this->telefonoContacto;
-    }
+        /**
+         * Get the value of telefonoContacto
+         */
 
-    /**
-     * Set the value of telefonoContacto
-     *
-     * @return  self
-     */
+        public function getTelefonoContacto()
+        {
+            return $this->telefonoContacto;
+        }
 
-    public function setTelefonoContacto($telefonoContacto)
-    {
-        $this->telefonoContacto = $telefonoContacto;
+        /**
+         * Set the value of telefonoContacto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTelefonoContacto($telefonoContacto)
+        {
+            $this->telefonoContacto = $telefonoContacto;
 
-    /**
-     * Get the value of correoElectronico
-     */
+            return $this;
+        }
 
-    public function getCorreoElectronico()
-    {
-        return $this->correoElectronico;
-    }
+        /**
+         * Get the value of correoElectronico
+         */
 
-    /**
-     * Set the value of correoElectronico
-     *
-     * @return  self
-     */
+        public function getCorreoElectronico()
+        {
+            return $this->correoElectronico;
+        }
 
-    public function setCorreoElectronico($correoElectronico)
-    {
-        $this->correoElectronico = $correoElectronico;
+        /**
+         * Set the value of correoElectronico
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setCorreoElectronico($correoElectronico)
+        {
+            $this->correoElectronico = $correoElectronico;
+
+            return $this;
+        }
+    } ?>
 

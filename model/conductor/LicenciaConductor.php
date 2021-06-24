@@ -1,59 +1,64 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class LicenciaConductor
-{
-    private $NUMERO_DE_LICENCIA;
-    private $PAIS_DE_EMISION;
+<?php
 
-    //Constructor
-    public function __construct()
+    class LicenciaConductor
     {
-        //
-    }
+        //Variables
+        private $NUMERO_DE_LICENCIA;
+        private $PAIS_DE_EMISION;
 
-    /**
-     * Get the value of NUMERO_DE_LICENCIA
-     */
+        //Constructor
+        public function __construct()
+        {
+            //
+        }
 
-    public function getNUMERO_DE_LICENCIA()
-    {
-        return $this->NUMERO_DE_LICENCIA;
-    }
+        // METODOS GETTERS y SETTERS
 
-    /**
-     * Set the value of NUMERO_DE_LICENCIA
-     *
-     * @return  self
-     */
+        /**
+         * Get the value of NUMERO_DE_LICENCIA
+         */
 
-    public function setNUMERO_DE_LICENCIA($NUMERO_DE_LICENCIA)
-    {
-        $this->NUMERO_DE_LICENCIA = $NUMERO_DE_LICENCIA;
+        public function getNUMERO_DE_LICENCIA()
+        {
+            return $this->NUMERO_DE_LICENCIA;
+        }
 
-        return $this;
-    }
+        /**
+         * Set the value of NUMERO_DE_LICENCIA
+         *
+         * @return  self
+         */
 
-    /**
-     * Get the value of PAIS_DE_EMISION
-     */
+        public function setNUMERO_DE_LICENCIA($NUMERO_DE_LICENCIA)
+        {
+            $this->NUMERO_DE_LICENCIA = $NUMERO_DE_LICENCIA;
 
-    public function getPAIS_DE_EMISION()
-    {
-        return $this->PAIS_DE_EMISION;
-    }
+            return $this;
+        }
 
-    /**
-     * Set the value of PAIS_DE_EMISION
-     *
-     * @return  self
-     */
+        /**
+         * Get the value of PAIS_DE_EMISION
+         */
 
-    public function setPAIS_DE_EMISION($PAIS_DE_EMISION)
-    {
-        $this->PAIS_DE_EMISION = $PAIS_DE_EMISION;
+        public function getPAIS_DE_EMISION()
+        {
+            return $this->PAIS_DE_EMISION;
+        }
 
-        return $this;
-    }
-} ?>
+        /**
+         * Set the value of PAIS_DE_EMISION
+         *
+         * @return  self
+         */
+
+        public function setPAIS_DE_EMISION($PAIS_DE_EMISION)
+        {
+            $this->PAIS_DE_EMISION = $PAIS_DE_EMISION;
+
+            return $this;
+        }
+    } ?>
 

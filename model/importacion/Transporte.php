@@ -1,85 +1,87 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Transporte
-{
-    //VARIABLES
-    private $codigoTransportista;
-    private $numeroDocumentoTransporte;
-    private $fechaDocumentoTransporte;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Transporte
     {
-        //
-    }
+        //VARIABLES
+        private $codigoTransportista;
+        private $numeroDocumentoTransporte;
+        private $fechaDocumentoTransporte;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of codigoTransportista
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getCodigoTransportista()
-    {
-        return $this->codigoTransportista;
-    }
+        /**
+         * Get the value of codigoTransportista
+         */
 
-    /**
-     * Set the value of codigoTransportista
-     *
-     * @return  self
-     */
+        public function getCodigoTransportista()
+        {
+            return $this->codigoTransportista;
+        }
 
-    public function setCodigoTransportista($codigoTransportista)
-    {
-        $this->codigoTransportista = $codigoTransportista;
+        /**
+         * Set the value of codigoTransportista
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoTransportista($codigoTransportista)
+        {
+            $this->codigoTransportista = $codigoTransportista;
 
-    /**
-     * Get the value of numeroDocumentoTransporte
-     */
+            return $this;
+        }
 
-    public function getNumeroDocumentoTransporte()
-    {
-        return $this->numeroDocumentoTransporte;
-    }
+        /**
+         * Get the value of numeroDocumentoTransporte
+         */
 
-    /**
-     * Set the value of numeroDocumentoTransporte
-     *
-     * @return  self
-     */
+        public function getNumeroDocumentoTransporte()
+        {
+            return $this->numeroDocumentoTransporte;
+        }
 
-    public function setNumeroDocumentoTransporte($numeroDocumentoTransporte)
-    {
-        $this->numeroDocumentoTransporte = $numeroDocumentoTransporte;
+        /**
+         * Set the value of numeroDocumentoTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroDocumentoTransporte($numeroDocumentoTransporte)
+        {
+            $this->numeroDocumentoTransporte = $numeroDocumentoTransporte;
 
-    /**
-     * Get the value of fechaDocumentoTransporte
-     */
+            return $this;
+        }
 
-    public function getFechaDocumentoTransporte()
-    {
-        return $this->fechaDocumentoTransporte;
-    }
+        /**
+         * Get the value of fechaDocumentoTransporte
+         */
 
-    /**
-     * Set the value of fechaDocumentoTransporte
-     *
-     * @return  self
-     */
+        public function getFechaDocumentoTransporte()
+        {
+            return $this->fechaDocumentoTransporte;
+        }
 
-    public function setFechaDocumentoTransporte($fechaDocumentoTransporte)
-    {
-        $this->fechaDocumentoTransporte = $fechaDocumentoTransporte;
+        /**
+         * Set the value of fechaDocumentoTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setFechaDocumentoTransporte($fechaDocumentoTransporte)
+        {
+            $this->fechaDocumentoTransporte = $fechaDocumentoTransporte;
+
+            return $this;
+        }
+    } ?>
 

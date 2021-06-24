@@ -1,292 +1,294 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ListaArticulo
-{
-    //VARIABLES
-    private $numero;
-    private $descripcion;
-    private $codigoArancelario;
-    private $paisOrigen;
-    private $tipoCarga;
-    private $cantidadUnidades;
-    private $cantidadCargada;
-    private $pesoBruto;
-    private $volumenBruto;
-    private $valorDeclarado;
-    private $codigoMercanciaPeligrosa;
-	private $Articulo = array([])			//PENDIENTE
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class ListaArticulo
     {
-        //
-    }
+        //VARIABLES
+        private $numero;
+        private $descripcion;
+        private $codigoArancelario;
+        private $paisOrigen;
+        private $tipoCarga;
+        private $cantidadUnidades;
+        private $cantidadCargada;
+        private $pesoBruto;
+        private $volumenBruto;
+        private $valorDeclarado;
+        private $codigoMercanciaPeligrosa;
+        private $Articulo = array();
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numero
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumero()
-    {
-        return $this->numero;
-    }
+        /**
+         * Get the value of numero
+         */
 
-    /**
-     * Set the value of numero
-     *
-     * @return  self
-     */
+        public function getNumero()
+        {
+            return $this->numero;
+        }
 
-    public function setNumero($numero)
-    {
-        $this->numero = $numero;
+        /**
+         * Set the value of numero
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumero($numero)
+        {
+            $this->numero = $numero;
 
-    /**
-     * Get the value of descripcion
-     */
+            return $this;
+        }
 
-    public function getDescripcion()
-    {
-        return $this->descripcion;
-    }
+        /**
+         * Get the value of descripcion
+         */
 
-    /**
-     * Set the value of descripcion
-     *
-     * @return  self
-     */
+        public function getDescripcion()
+        {
+            return $this->descripcion;
+        }
 
-    public function setDescripcion($descripcion)
-    {
-        $this->descripcion = $descripcion;
+        /**
+         * Set the value of descripcion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setDescripcion($descripcion)
+        {
+            $this->descripcion = $descripcion;
 
-    /**
-     * Get the value of codigoArancelario
-     */
+            return $this;
+        }
 
-    public function getCodigoArancelario()
-    {
-        return $this->codigoArancelario;
-    }
+        /**
+         * Get the value of codigoArancelario
+         */
 
-    /**
-     * Set the value of codigoArancelario
-     *
-     * @return  self
-     */
+        public function getCodigoArancelario()
+        {
+            return $this->codigoArancelario;
+        }
 
-    public function setCodigoArancelario($codigoArancelario)
-    {
-        $this->codigoArancelario = $codigoArancelario;
+        /**
+         * Set the value of codigoArancelario
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoArancelario($codigoArancelario)
+        {
+            $this->codigoArancelario = $codigoArancelario;
 
-    /**
-     * Get the value of paisOrigen
-     */
+            return $this;
+        }
 
-    public function getPaisOrigen()
-    {
-        return $this->paisOrigen;
-    }
+        /**
+         * Get the value of paisOrigen
+         */
 
-    /**
-     * Set the value of paisOrigen
-     *
-     * @return  self
-     */
+        public function getPaisOrigen()
+        {
+            return $this->paisOrigen;
+        }
 
-    public function setPaisOrigen($paisOrigen)
-    {
-        $this->paisOrigen = $paisOrigen;
+        /**
+         * Set the value of paisOrigen
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPaisOrigen($paisOrigen)
+        {
+            $this->paisOrigen = $paisOrigen;
 
-    /**
-     * Get the value of tipoCarga
-     */
+            return $this;
+        }
 
-    public function getTipoCarga()
-    {
-        return $this->tipoCarga;
-    }
+        /**
+         * Get the value of tipoCarga
+         */
 
-    /**
-     * Set the value of tipoCarga
-     *
-     * @return  self
-     */
+        public function getTipoCarga()
+        {
+            return $this->tipoCarga;
+        }
 
-    public function setTipoCarga($tipoCarga)
-    {
-        $this->tipoCarga = $tipoCarga;
+        /**
+         * Set the value of tipoCarga
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoCarga($tipoCarga)
+        {
+            $this->tipoCarga = $tipoCarga;
 
-    /**
-     * Get the value of cantidadUnidades
-     */
+            return $this;
+        }
 
-    public function getCantidadUnidades()
-    {
-        return $this->cantidadUnidades;
-    }
+        /**
+         * Get the value of cantidadUnidades
+         */
 
-    /**
-     * Set the value of cantidadUnidades
-     *
-     * @return  self
-     */
+        public function getCantidadUnidades()
+        {
+            return $this->cantidadUnidades;
+        }
 
-    public function setCantidadUnidades($cantidadUnidades)
-    {
-        $this->cantidadUnidades = $cantidadUnidades;
+        /**
+         * Set the value of cantidadUnidades
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCantidadUnidades($cantidadUnidades)
+        {
+            $this->cantidadUnidades = $cantidadUnidades;
 
-    /**
-     * Get the value of cantidadCargada
-     */
+            return $this;
+        }
 
-    public function getCantidadCargada()
-    {
-        return $this->cantidadCargada;
-    }
+        /**
+         * Get the value of cantidadCargada
+         */
 
-    /**
-     * Set the value of cantidadCargada
-     *
-     * @return  self
-     */
+        public function getCantidadCargada()
+        {
+            return $this->cantidadCargada;
+        }
 
-    public function setCantidadCargada($cantidadCargada)
-    {
-        $this->cantidadCargada = $cantidadCargada;
+        /**
+         * Set the value of cantidadCargada
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCantidadCargada($cantidadCargada)
+        {
+            $this->cantidadCargada = $cantidadCargada;
 
-    /**
-     * Get the value of pesoBruto
-     */
+            return $this;
+        }
 
-    public function getPesoBruto()
-    {
-        return $this->pesoBruto;
-    }
+        /**
+         * Get the value of pesoBruto
+         */
 
-    /**
-     * Set the value of pesoBruto
-     *
-     * @return  self
-     */
+        public function getPesoBruto()
+        {
+            return $this->pesoBruto;
+        }
 
-    public function setPesoBruto($pesoBruto)
-    {
-        $this->pesoBruto = $pesoBruto;
+        /**
+         * Set the value of pesoBruto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPesoBruto($pesoBruto)
+        {
+            $this->pesoBruto = $pesoBruto;
 
-    /**
-     * Get the value of volumenBruto
-     */
+            return $this;
+        }
 
-    public function getVolumenBruto()
-    {
-        return $this->volumenBruto;
-    }
+        /**
+         * Get the value of volumenBruto
+         */
 
-    /**
-     * Set the value of volumenBruto
-     *
-     * @return  self
-     */
+        public function getVolumenBruto()
+        {
+            return $this->volumenBruto;
+        }
 
-    public function setVolumenBruto($volumenBruto)
-    {
-        $this->volumenBruto = $volumenBruto;
+        /**
+         * Set the value of volumenBruto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setVolumenBruto($volumenBruto)
+        {
+            $this->volumenBruto = $volumenBruto;
 
-    /**
-     * Get the value of valorDeclarado
-     */
+            return $this;
+        }
 
-    public function getValorDeclarado()
-    {
-        return $this->valorDeclarado;
-    }
+        /**
+         * Get the value of valorDeclarado
+         */
 
-    /**
-     * Set the value of valorDeclarado
-     *
-     * @return  self
-     */
+        public function getValorDeclarado()
+        {
+            return $this->valorDeclarado;
+        }
 
-    public function setValorDeclarado($valorDeclarado)
-    {
-        $this->valorDeclarado = $valorDeclarado;
+        /**
+         * Set the value of valorDeclarado
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setValorDeclarado($valorDeclarado)
+        {
+            $this->valorDeclarado = $valorDeclarado;
 
-    /**
-     * Get the value of codigoMercanciaPeligrosa
-     */
+            return $this;
+        }
 
-    public function getCodigoMercanciaPeligrosa()
-    {
-        return $this->codigoMercanciaPeligrosa;
-    }
+        /**
+         * Get the value of codigoMercanciaPeligrosa
+         */
 
-    /**
-     * Set the value of codigoMercanciaPeligrosa
-     *
-     * @return  self
-     */
+        public function getCodigoMercanciaPeligrosa()
+        {
+            return $this->codigoMercanciaPeligrosa;
+        }
 
-    public function setCodigoMercanciaPeligrosa($codigoMercanciaPeligrosa)
-    {
-        $this->codigoMercanciaPeligrosa = $codigoMercanciaPeligrosa;
+        /**
+         * Set the value of codigoMercanciaPeligrosa
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setCodigoMercanciaPeligrosa($codigoMercanciaPeligrosa)
+        {
+            $this->codigoMercanciaPeligrosa = $codigoMercanciaPeligrosa;
 
-    /**
-     * Get the value of Articulo
-     */
+            return $this;
+        }
 
-    public function getArticulo()
-    {
-        return $this->Articulo;
-    }
+        /**
+         * Get the value of Articulo
+         */
 
-    /**
-     * Set the value of Articulo
-     *
-     * @return  self
-     */
+        public function getArticulo()
+        {
+            return $this->Articulo;
+        }
 
-    public function setArticulo($Articulo)
-    {
-        $this->Articulo = $Articulo;
+        /**
+         * Set the value of Articulo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setArticulo($Articulo)
+        {
+            $this->Articulo = $Articulo;
+
+            return $this;
+        }
+    } ?>
 

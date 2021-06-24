@@ -1,40 +1,42 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ExportacionAnulacionConsultarRq
-{
-    //VARIABLES
-    private $numeroDeclaracion;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class ExportacionAnulacionConsultarRq
     {
-        //
-    }
+        //VARIABLES
+        private $numeroDeclaracion;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numeroDeclaracion
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumeroDeclaracion()
-    {
-        return $this->numeroDeclaracion;
-    }
+        /**
+         * Get the value of numeroDeclaracion
+         */
 
-    /**
-     * Set the value of numeroDeclaracion
-     *
-     * @return  self
-     */
+        public function getNumeroDeclaracion()
+        {
+            return $this->numeroDeclaracion;
+        }
 
-    public function setNumeroDeclaracion($numeroDeclaracion)
-    {
-        $this->numeroDeclaracion = $numeroDeclaracion;
+        /**
+         * Set the value of numeroDeclaracion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setNumeroDeclaracion($numeroDeclaracion)
+        {
+            $this->numeroDeclaracion = $numeroDeclaracion;
+
+            return $this;
+        }
+    } ?>
 
 

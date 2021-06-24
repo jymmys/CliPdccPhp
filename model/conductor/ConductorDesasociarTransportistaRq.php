@@ -1,58 +1,65 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ConductorDesasociarTransportistaRq
-{
-    private $CODIGO_CONDUCTOR;
-    private $CODIGO_TRANSPORTISTA;
+<?php
 
-    public function __construct()
+    class ConductorDesasociarTransportistaRq
     {
-    }
+        //Variables
+        private $CODIGO_CONDUCTOR;
+        private $CODIGO_TRANSPORTISTA;
 
-    /**
-     * Get the value of CODIGO_CONDUCTOR
-     */
+        public function __construct()
+        {
+            //
+        }
 
-    public function getCODIGO_CONDUCTOR()
-    {
-        return $this->CODIGO_CONDUCTOR;
-    }
 
-    /**
-     * Set the value of CODIGO_CONDUCTOR
-     *
-     * @return  self
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
-    {
-        $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
+        /**
+         * Get the value of CODIGO_CONDUCTOR
+         */
 
-        return $this;
-    }
+        public function getCODIGO_CONDUCTOR()
+        {
+            return $this->CODIGO_CONDUCTOR;
+        }
 
-    /**
-     * Get the value of CODIGO_TRANSPORTISTA
-     */
+        /**
+         * Set the value of CODIGO_CONDUCTOR
+         *
+         * @return  self
+         */
 
-    public function getCODIGO_TRANSPORTISTA()
-    {
-        return $this->CODIGO_TRANSPORTISTA;
-    }
+        public function setCODIGO_CONDUCTOR($CODIGO_CONDUCTOR)
+        {
+            $this->CODIGO_CONDUCTOR = $CODIGO_CONDUCTOR;
 
-    /**
-     * Set the value of CODIGO_TRANSPORTISTA
-     *
-     * @return  self
-     */
+            return $this;
+        }
 
-    public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
-    {
-        $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+        /**
+         * Get the value of CODIGO_TRANSPORTISTA
+         */
 
-        return $this;
-    }
-} ?>
+        public function getCODIGO_TRANSPORTISTA()
+        {
+            return $this->CODIGO_TRANSPORTISTA;
+        }
+
+        /**
+         * Set the value of CODIGO_TRANSPORTISTA
+         *
+         * @return  self
+         */
+
+        public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
+        {
+            $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+
+            return $this;
+        }
+    } ?>
 
 

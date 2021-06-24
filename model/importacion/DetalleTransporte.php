@@ -1,223 +1,225 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class DetalleTransporte
-{
-    //VARIABLES
-    private $modoTransporte;
-    private $fechaPartida;
-    private $paisProcedencia;
-    private $aduanaIngreso;
-    private $aduanaDestino;
-    private $lugarEmbarque;
-    private $lugarDesembarque;
-    private $fechaArribo;
-    private $paisDestino;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class DetalleTransporte
     {
-        //
-    }
+        //VARIABLES
+        private $modoTransporte;
+        private $fechaPartida;
+        private $paisProcedencia;
+        private $aduanaIngreso;
+        private $aduanaDestino;
+        private $lugarEmbarque;
+        private $lugarDesembarque;
+        private $fechaArribo;
+        private $paisDestino;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of modoTransporte
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getModoTransporte()
-    {
-        return $this->modoTransporte;
-    }
+        /**
+         * Get the value of modoTransporte
+         */
 
-    /**
-     * Set the value of modoTransporte
-     *
-     * @return  self
-     */
+        public function getModoTransporte()
+        {
+            return $this->modoTransporte;
+        }
 
-    public function setModoTransporte($modoTransporte)
-    {
-        $this->modoTransporte = $modoTransporte;
+        /**
+         * Set the value of modoTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setModoTransporte($modoTransporte)
+        {
+            $this->modoTransporte = $modoTransporte;
 
-    /**
-     * Get the value of fechaPartida
-     */
+            return $this;
+        }
 
-    public function getFechaPartida()
-    {
-        return $this->fechaPartida;
-    }
+        /**
+         * Get the value of fechaPartida
+         */
 
-    /**
-     * Set the value of fechaPartida
-     *
-     * @return  self
-     */
+        public function getFechaPartida()
+        {
+            return $this->fechaPartida;
+        }
 
-    public function setFechaPartida($fechaPartida)
-    {
-        $this->fechaPartida = $fechaPartida;
+        /**
+         * Set the value of fechaPartida
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaPartida($fechaPartida)
+        {
+            $this->fechaPartida = $fechaPartida;
 
-    /**
-     * Get the value of paisProcedencia
-     */
+            return $this;
+        }
 
-    public function getPaisProcedencia()
-    {
-        return $this->paisProcedencia;
-    }
+        /**
+         * Get the value of paisProcedencia
+         */
 
-    /**
-     * Set the value of paisProcedencia
-     *
-     * @return  self
-     */
+        public function getPaisProcedencia()
+        {
+            return $this->paisProcedencia;
+        }
 
-    public function setPaisProcedencia($paisProcedencia)
-    {
-        $this->paisProcedencia = $paisProcedencia;
+        /**
+         * Set the value of paisProcedencia
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPaisProcedencia($paisProcedencia)
+        {
+            $this->paisProcedencia = $paisProcedencia;
 
-    /**
-     * Get the value of aduanaIngreso
-     */
+            return $this;
+        }
 
-    public function getAduanaIngreso()
-    {
-        return $this->aduanaIngreso;
-    }
+        /**
+         * Get the value of aduanaIngreso
+         */
 
-    /**
-     * Set the value of aduanaIngreso
-     *
-     * @return  self
-     */
+        public function getAduanaIngreso()
+        {
+            return $this->aduanaIngreso;
+        }
 
-    public function setAduanaIngreso($aduanaIngreso)
-    {
-        $this->aduanaIngreso = $aduanaIngreso;
+        /**
+         * Set the value of aduanaIngreso
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setAduanaIngreso($aduanaIngreso)
+        {
+            $this->aduanaIngreso = $aduanaIngreso;
 
-    /**
-     * Get the value of aduanaDestino
-     */
+            return $this;
+        }
 
-    public function getAduanaDestino()
-    {
-        return $this->aduanaDestino;
-    }
+        /**
+         * Get the value of aduanaDestino
+         */
 
-    /**
-     * Set the value of aduanaDestino
-     *
-     * @return  self
-     */
+        public function getAduanaDestino()
+        {
+            return $this->aduanaDestino;
+        }
 
-    public function setAduanaDestino($aduanaDestino)
-    {
-        $this->aduanaDestino = $aduanaDestino;
+        /**
+         * Set the value of aduanaDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setAduanaDestino($aduanaDestino)
+        {
+            $this->aduanaDestino = $aduanaDestino;
 
-    /**
-     * Get the value of lugarEmbarque
-     */
+            return $this;
+        }
 
-    public function getLugarEmbarque()
-    {
-        return $this->lugarEmbarque;
-    }
+        /**
+         * Get the value of lugarEmbarque
+         */
 
-    /**
-     * Set the value of lugarEmbarque
-     *
-     * @return  self
-     */
+        public function getLugarEmbarque()
+        {
+            return $this->lugarEmbarque;
+        }
 
-    public function setLugarEmbarque($lugarEmbarque)
-    {
-        $this->lugarEmbarque = $lugarEmbarque;
+        /**
+         * Set the value of lugarEmbarque
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setLugarEmbarque($lugarEmbarque)
+        {
+            $this->lugarEmbarque = $lugarEmbarque;
 
-    /**
-     * Get the value of lugarDesembarque
-     */
+            return $this;
+        }
 
-    public function getLugarDesembarque()
-    {
-        return $this->lugarDesembarque;
-    }
+        /**
+         * Get the value of lugarDesembarque
+         */
 
-    /**
-     * Set the value of lugarDesembarque
-     *
-     * @return  self
-     */
+        public function getLugarDesembarque()
+        {
+            return $this->lugarDesembarque;
+        }
 
-    public function setLugarDesembarque($lugarDesembarque)
-    {
-        $this->lugarDesembarque = $lugarDesembarque;
+        /**
+         * Set the value of lugarDesembarque
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setLugarDesembarque($lugarDesembarque)
+        {
+            $this->lugarDesembarque = $lugarDesembarque;
 
-    /**
-     * Get the value of fechaArribo
-     */
+            return $this;
+        }
 
-    public function getFechaArribo()
-    {
-        return $this->fechaArribo;
-    }
+        /**
+         * Get the value of fechaArribo
+         */
 
-    /**
-     * Set the value of fechaArribo
-     *
-     * @return  self
-     */
+        public function getFechaArribo()
+        {
+            return $this->fechaArribo;
+        }
 
-    public function setFechaArribo($fechaArribo)
-    {
-        $this->fechaArribo = $fechaArribo;
+        /**
+         * Set the value of fechaArribo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaArribo($fechaArribo)
+        {
+            $this->fechaArribo = $fechaArribo;
 
-    /**
-     * Get the value of paisDestino
-     */
+            return $this;
+        }
 
-    public function getPaisDestino()
-    {
-        return $this->paisDestino;
-    }
+        /**
+         * Get the value of paisDestino
+         */
 
-    /**
-     * Set the value of paisDestino
-     *
-     * @return  self
-     */
+        public function getPaisDestino()
+        {
+            return $this->paisDestino;
+        }
 
-    public function setPaisDestino($paisDestino)
-    {
-        $this->paisDestino = $paisDestino;
+        /**
+         * Set the value of paisDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setPaisDestino($paisDestino)
+        {
+            $this->paisDestino = $paisDestino;
+
+            return $this;
+        }
+    } ?>
 

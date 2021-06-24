@@ -1,108 +1,110 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class DetalleArticulo
-{
-    //VARIABLES
-    private $numeroDUCAImpo;
-    private $paisDestino;
-    private $fechaDescarga;
-    private $pesoBrutoDescargado;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class DetalleArticulo
     {
-        //
-    }
+        //VARIABLES
+        private $numeroDUCAImpo;
+        private $paisDestino;
+        private $fechaDescarga;
+        private $pesoBrutoDescargado;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numeroDUCAImpo
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumeroDUCAImpo()
-    {
-        return $this->numeroDUCAImpo;
-    }
+        /**
+         * Get the value of numeroDUCAImpo
+         */
 
-    /**
-     * Set the value of numeroDUCAImpo
-     *
-     * @return  self
-     */
+        public function getNumeroDUCAImpo()
+        {
+            return $this->numeroDUCAImpo;
+        }
 
-    public function setNumeroDUCAImpo($numeroDUCAImpo)
-    {
-        $this->numeroDUCAImpo = $numeroDUCAImpo;
+        /**
+         * Set the value of numeroDUCAImpo
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroDUCAImpo($numeroDUCAImpo)
+        {
+            $this->numeroDUCAImpo = $numeroDUCAImpo;
 
-    /**
-     * Get the value of paisDestino
-     */
+            return $this;
+        }
 
-    public function getPaisDestino()
-    {
-        return $this->paisDestino;
-    }
+        /**
+         * Get the value of paisDestino
+         */
 
-    /**
-     * Set the value of paisDestino
-     *
-     * @return  self
-     */
+        public function getPaisDestino()
+        {
+            return $this->paisDestino;
+        }
 
-    public function setPaisDestino($paisDestino)
-    {
-        $this->paisDestino = $paisDestino;
+        /**
+         * Set the value of paisDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setPaisDestino($paisDestino)
+        {
+            $this->paisDestino = $paisDestino;
 
-    /**
-     * Get the value of fechaDescarga
-     */
+            return $this;
+        }
 
-    public function getFechaDescarga()
-    {
-        return $this->fechaDescarga;
-    }
+        /**
+         * Get the value of fechaDescarga
+         */
 
-    /**
-     * Set the value of fechaDescarga
-     *
-     * @return  self
-     */
+        public function getFechaDescarga()
+        {
+            return $this->fechaDescarga;
+        }
 
-    public function setFechaDescarga($fechaDescarga)
-    {
-        $this->fechaDescarga = $fechaDescarga;
+        /**
+         * Set the value of fechaDescarga
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaDescarga($fechaDescarga)
+        {
+            $this->fechaDescarga = $fechaDescarga;
 
-    /**
-     * Get the value of pesoBrutoDescargado
-     */
+            return $this;
+        }
 
-    public function getPesoBrutoDescargado()
-    {
-        return $this->pesoBrutoDescargado;
-    }
+        /**
+         * Get the value of pesoBrutoDescargado
+         */
 
-    /**
-     * Set the value of pesoBrutoDescargado
-     *
-     * @return  self
-     */
+        public function getPesoBrutoDescargado()
+        {
+            return $this->pesoBrutoDescargado;
+        }
 
-    public function setPesoBrutoDescargado($pesoBrutoDescargado)
-    {
-        $this->pesoBrutoDescargado = $pesoBrutoDescargado;
+        /**
+         * Set the value of pesoBrutoDescargado
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setPesoBrutoDescargado($pesoBrutoDescargado)
+        {
+            $this->pesoBrutoDescargado = $pesoBrutoDescargado;
+
+            return $this;
+        }
+    } ?>
 

@@ -1,39 +1,41 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class TransbordoMercanciaEliminarRq
-{
-    //VARIABLES
-    private $numeroManifiesto;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class TransbordoMercanciaEliminarRq
     {
-        //
-    }
+        //VARIABLES
+        private $numeroManifiesto;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numeroManifiesto
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumeroManifiesto()
-    {
-        return $this->numeroManifiesto;
-    }
+        /**
+         * Get the value of numeroManifiesto
+         */
 
-    /**
-     * Set the value of numeroManifiesto
-     *
-     * @return  self
-     */
+        public function getNumeroManifiesto()
+        {
+            return $this->numeroManifiesto;
+        }
 
-    public function setNumeroManifiesto($numeroManifiesto)
-    {
-        $this->numeroManifiesto = $numeroManifiesto;
+        /**
+         * Set the value of numeroManifiesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setNumeroManifiesto($numeroManifiesto)
+        {
+            $this->numeroManifiesto = $numeroManifiesto;
+
+            return $this;
+        }
+    } ?>
 

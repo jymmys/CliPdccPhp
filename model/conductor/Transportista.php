@@ -1,107 +1,113 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Transportista
-{
-    private string $CODIGO_TRANSPORTISTA;
-    private string $TIPO_DOCUMENTO;
-    private string $NUMERO_IDENTIFICACION;
-    private string $RAZON_SOCIAL;
+<?php
 
-    //Constructor
-    public function __construct()
+    class Transportista
     {
-        //
-    }
+        //Variables
+        private string $CODIGO_TRANSPORTISTA;
+        private string $TIPO_DOCUMENTO;
+        private string $NUMERO_IDENTIFICACION;
+        private string $RAZON_SOCIAL;
 
-    /**
-     * Get the value of CODIGO_TRANSPORTISTA
-     */
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    public function getCODIGO_TRANSPORTISTA()
-    {
-        return $this->CODIGO_TRANSPORTISTA;
-    }
+        // METODOS GETTERS y SETTERS
 
-    /**
-     * Set the value of CODIGO_TRANSPORTISTA
-     *
-     * @return  self
-     */
 
-    public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
-    {
-        $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
+        /**
+         * Get the value of CODIGO_TRANSPORTISTA
+         */
 
-        return $this;
-    }
+        public function getCODIGO_TRANSPORTISTA()
+        {
+            return $this->CODIGO_TRANSPORTISTA;
+        }
 
-    /**
-     * Get the value of TIPO_DOCUMENTO
-     */
+        /**
+         * Set the value of CODIGO_TRANSPORTISTA
+         *
+         * @return  self
+         */
 
-    public function getTIPO_DOCUMENTO()
-    {
-        return $this->TIPO_DOCUMENTO;
-    }
+        public function setCODIGO_TRANSPORTISTA($CODIGO_TRANSPORTISTA)
+        {
+            $this->CODIGO_TRANSPORTISTA = $CODIGO_TRANSPORTISTA;
 
-    /**
-     * Set the value of TIPO_DOCUMENTO
-     *
-     * @return  self
-     */
+            return $this;
+        }
 
-    public function setTIPO_DOCUMENTO($TIPO_DOCUMENTO)
-    {
-        $this->TIPO_DOCUMENTO = $TIPO_DOCUMENTO;
+        /**
+         * Get the value of TIPO_DOCUMENTO
+         */
 
-        return $this;
-    }
+        public function getTIPO_DOCUMENTO()
+        {
+            return $this->TIPO_DOCUMENTO;
+        }
 
-    /**
-     * Get the value of NUMERO_IDENTIFICACION
-     */
+        /**
+         * Set the value of TIPO_DOCUMENTO
+         *
+         * @return  self
+         */
 
-    public function getNUMERO_IDENTIFICACION()
-    {
-        return $this->NUMERO_IDENTIFICACION;
-    }
+        public function setTIPO_DOCUMENTO($TIPO_DOCUMENTO)
+        {
+            $this->TIPO_DOCUMENTO = $TIPO_DOCUMENTO;
 
-    /**
-     * Set the value of NUMERO_IDENTIFICACION
-     *
-     * @return  self
-     */
+            return $this;
+        }
 
-    public function setNUMERO_IDENTIFICACION($NUMERO_IDENTIFICACION)
-    {
-        $this->NUMERO_IDENTIFICACION = $NUMERO_IDENTIFICACION;
+        /**
+         * Get the value of NUMERO_IDENTIFICACION
+         */
 
-        return $this;
-    }
+        public function getNUMERO_IDENTIFICACION()
+        {
+            return $this->NUMERO_IDENTIFICACION;
+        }
 
-    /**
-     * Get the value of RAZON_SOCIAL
-     */
+        /**
+         * Set the value of NUMERO_IDENTIFICACION
+         *
+         * @return  self
+         */
 
-    public function getRAZON_SOCIAL()
-    {
-        return $this->RAZON_SOCIAL;
-    }
+        public function setNUMERO_IDENTIFICACION($NUMERO_IDENTIFICACION)
+        {
+            $this->NUMERO_IDENTIFICACION = $NUMERO_IDENTIFICACION;
 
-    /**
-     * Set the value of RAZON_SOCIAL
-     *
-     * @return  self
-     */
+            return $this;
+        }
 
-    public function setRAZON_SOCIAL($RAZON_SOCIAL)
-    {
-        $this->RAZON_SOCIAL = $RAZON_SOCIAL;
+        /**
+         * Get the value of RAZON_SOCIAL
+         */
 
-        return $this;
-    }
-} ?>
+        public function getRAZON_SOCIAL()
+        {
+            return $this->RAZON_SOCIAL;
+        }
+
+        /**
+         * Set the value of RAZON_SOCIAL
+         *
+         * @return  self
+         */
+
+        public function setRAZON_SOCIAL($RAZON_SOCIAL)
+        {
+            $this->RAZON_SOCIAL = $RAZON_SOCIAL;
+
+            return $this;
+        }
+    } ?>
 
 
 

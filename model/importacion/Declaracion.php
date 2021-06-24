@@ -1,223 +1,225 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class Declaracion
-{
-    //VARIABLES
-    private $numeroDeclaracion;
-    private $fechaSolicitud;
-    private $tipoDeclaracion;
-    private $fechaDeclaracion;
-    private $fechaTramite;
-    private $resolucion;
-    private $tipoDespacho;
-    private $tipoCarga;
-    private $observacion;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class Declaracion
     {
-        //
-    }
+        //VARIABLES
+        private $numeroDeclaracion;
+        private $fechaSolicitud;
+        private $tipoDeclaracion;
+        private $fechaDeclaracion;
+        private $fechaTramite;
+        private $resolucion;
+        private $tipoDespacho;
+        private $tipoCarga;
+        private $observacion;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numeroDeclaracion
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumeroDeclaracion()
-    {
-        return $this->numeroDeclaracion;
-    }
+        /**
+         * Get the value of numeroDeclaracion
+         */
 
-    /**
-     * Set the value of numeroDeclaracion
-     *
-     * @return  self
-     */
+        public function getNumeroDeclaracion()
+        {
+            return $this->numeroDeclaracion;
+        }
 
-    public function setNumeroDeclaracion($numeroDeclaracion)
-    {
-        $this->numeroDeclaracion = $numeroDeclaracion;
+        /**
+         * Set the value of numeroDeclaracion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroDeclaracion($numeroDeclaracion)
+        {
+            $this->numeroDeclaracion = $numeroDeclaracion;
 
-    /**
-     * Get the value of fechaSolicitud
-     */
+            return $this;
+        }
 
-    public function getFechaSolicitud()
-    {
-        return $this->fechaSolicitud;
-    }
-	
-    /**
-     * Set the value of fechaSolicitud
-     *
-     * @return  self
-     */
+        /**
+         * Get the value of fechaSolicitud
+         */
 
-    public function setFechaSolicitud($fechaSolicitud)
-    {
-        $this->fechaSolicitud = $fechaSolicitud;
+        public function getFechaSolicitud()
+        {
+            return $this->fechaSolicitud;
+        }
+    
+        /**
+         * Set the value of fechaSolicitud
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaSolicitud($fechaSolicitud)
+        {
+            $this->fechaSolicitud = $fechaSolicitud;
 
-    /**
-     * Get the value of tipoDeclaracion
-     */
+            return $this;
+        }
 
-    public function getTipoDeclaracion()
-    {
-        return $this->tipoDeclaracion;
-    }
+        /**
+         * Get the value of tipoDeclaracion
+         */
 
-    /**
-     * Set the value of tipoDeclaracion
-     *
-     * @return  self
-     */
+        public function getTipoDeclaracion()
+        {
+            return $this->tipoDeclaracion;
+        }
 
-    public function setTipoDeclaracion($tipoDeclaracion)
-    {
-        $this->tipoDeclaracion = $tipoDeclaracion;
+        /**
+         * Set the value of tipoDeclaracion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoDeclaracion($tipoDeclaracion)
+        {
+            $this->tipoDeclaracion = $tipoDeclaracion;
 
-    /**
-     * Get the value of fechaDeclaracion
-     */
+            return $this;
+        }
 
-    public function getFechaDeclaracion()
-    {
-        return $this->fechaDeclaracion;
-    }
+        /**
+         * Get the value of fechaDeclaracion
+         */
 
-    /**
-     * Set the value of fechaDeclaracion
-     *
-     * @return  self
-     */
+        public function getFechaDeclaracion()
+        {
+            return $this->fechaDeclaracion;
+        }
 
-    public function setFechaDeclaracion($fechaDeclaracion)
-    {
-        $this->fechaDeclaracion = $fechaDeclaracion;
+        /**
+         * Set the value of fechaDeclaracion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaDeclaracion($fechaDeclaracion)
+        {
+            $this->fechaDeclaracion = $fechaDeclaracion;
 
-    /**
-     * Get the value of fechaTramite
-     */
+            return $this;
+        }
 
-    public function getFechaTramite()
-    {
-        return $this->fechaTramite;
-    }
+        /**
+         * Get the value of fechaTramite
+         */
 
-    /**
-     * Set the value of fechaTramite
-     *
-     * @return  self
-     */
+        public function getFechaTramite()
+        {
+            return $this->fechaTramite;
+        }
 
-    public function setFechaTramite($fechaTramite)
-    {
-        $this->fechaTramite = $fechaTramite;
+        /**
+         * Set the value of fechaTramite
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaTramite($fechaTramite)
+        {
+            $this->fechaTramite = $fechaTramite;
 
-    /**
-     * Get the value of resolucion
-     */
+            return $this;
+        }
 
-    public function getResolucion()
-    {
-        return $this->resolucion;
-    }
+        /**
+         * Get the value of resolucion
+         */
 
-    /**
-     * Set the value of resolucion
-     *
-     * @return  self
-     */
+        public function getResolucion()
+        {
+            return $this->resolucion;
+        }
 
-    public function setResolucion($resolucion)
-    {
-        $this->resolucion = $resolucion;
+        /**
+         * Set the value of resolucion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setResolucion($resolucion)
+        {
+            $this->resolucion = $resolucion;
 
-    /**
-     * Get the value of tipoDespacho
-     */
+            return $this;
+        }
 
-    public function getTipoDespacho()
-    {
-        return $this->tipoDespacho;
-    }
+        /**
+         * Get the value of tipoDespacho
+         */
 
-    /**
-     * Set the value of tipoDespacho
-     *
-     * @return  self
-     */
+        public function getTipoDespacho()
+        {
+            return $this->tipoDespacho;
+        }
 
-    public function setTipoDespacho($tipoDespacho)
-    {
-        $this->tipoDespacho = $tipoDespacho;
+        /**
+         * Set the value of tipoDespacho
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoDespacho($tipoDespacho)
+        {
+            $this->tipoDespacho = $tipoDespacho;
 
-    /**
-     * Get the value of tipoCarga
-     */
+            return $this;
+        }
 
-    public function getTipoCarga()
-    {
-        return $this->tipoCarga;
-    }
+        /**
+         * Get the value of tipoCarga
+         */
 
-    /**
-     * Set the value of tipoCarga
-     *
-     * @return  self
-     */
+        public function getTipoCarga()
+        {
+            return $this->tipoCarga;
+        }
 
-    public function setTipoCarga($tipoCarga)
-    {
-        $this->tipoCarga = $tipoCarga;
+        /**
+         * Set the value of tipoCarga
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoCarga($tipoCarga)
+        {
+            $this->tipoCarga = $tipoCarga;
 
-    /**
-     * Get the value of observacion
-     */
+            return $this;
+        }
 
-    public function getObservacion()
-    {
-        return $this->observacion;
-    }
+        /**
+         * Get the value of observacion
+         */
 
-    /**
-     * Set the value of observacion
-     *
-     * @return  self
-     */
+        public function getObservacion()
+        {
+            return $this->observacion;
+        }
 
-    public function setObservacion($observacion)
-    {
-        $this->observacion = $observacion;
+        /**
+         * Set the value of observacion
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setObservacion($observacion)
+        {
+            $this->observacion = $observacion;
+
+            return $this;
+        }
+    } ?>
 

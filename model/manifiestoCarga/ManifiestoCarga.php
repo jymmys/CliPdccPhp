@@ -1,201 +1,203 @@
 /*/
 @Yimis Torreglosa Diaz
 /*/
-<?php class ManifiestoCarga
-{
-    //VARIABLES
-    private $numeroManifiesto;
-    private $tipoManifiesto;
-    private $modoTransporte;
-    private $fechaManifiesto;
-    private $fechaPrevistaLlegada;
-    private $lugarSalida;
-    private $lugarDestino;
-    private $cantidadConocimientoEmbarque;
+<?php
 
-    //CONSTRUCTOR
-    public function __construct()
+    class ManifiestoCarga
     {
-        //
-    }
+        //VARIABLES
+        private $numeroManifiesto;
+        private $tipoManifiesto;
+        private $modoTransporte;
+        private $fechaManifiesto;
+        private $fechaPrevistaLlegada;
+        private $lugarSalida;
+        private $lugarDestino;
+        private $cantidadConocimientoEmbarque;
 
-    // METODOS GETTERS y SETTERS
+        //CONSTRUCTOR
+        public function __construct()
+        {
+            //
+        }
 
-    /**
-     * Get the value of numeroManifiesto
-     */
+        // METODOS GETTERS y SETTERS
 
-    public function getNumeroManifiesto()
-    {
-        return $this->numeroManifiesto;
-    }
+        /**
+         * Get the value of numeroManifiesto
+         */
 
-    /**
-     * Set the value of numeroManifiesto
-     *
-     * @return  self
-     */
+        public function getNumeroManifiesto()
+        {
+            return $this->numeroManifiesto;
+        }
 
-    public function setNumeroManifiesto($numeroManifiesto)
-    {
-        $this->numeroManifiesto = $numeroManifiesto;
+        /**
+         * Set the value of numeroManifiesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setNumeroManifiesto($numeroManifiesto)
+        {
+            $this->numeroManifiesto = $numeroManifiesto;
 
-    /**
-     * Get the value of tipoManifiesto
-     */
+            return $this;
+        }
 
-    public function getTipoManifiesto()
-    {
-        return $this->tipoManifiesto;
-    }
+        /**
+         * Get the value of tipoManifiesto
+         */
 
-    /**
-     * Set the value of tipoManifiesto
-     *
-     * @return  self
-     */
+        public function getTipoManifiesto()
+        {
+            return $this->tipoManifiesto;
+        }
 
-    public function setTipoManifiesto($tipoManifiesto)
-    {
-        $this->tipoManifiesto = $tipoManifiesto;
+        /**
+         * Set the value of tipoManifiesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setTipoManifiesto($tipoManifiesto)
+        {
+            $this->tipoManifiesto = $tipoManifiesto;
 
-    /**
-     * Get the value of modoTransporte
-     */
+            return $this;
+        }
 
-    public function getModoTransporte()
-    {
-        return $this->modoTransporte;
-    }
+        /**
+         * Get the value of modoTransporte
+         */
 
-    /**
-     * Set the value of modoTransporte
-     *
-     * @return  self
-     */
+        public function getModoTransporte()
+        {
+            return $this->modoTransporte;
+        }
 
-    public function setModoTransporte($modoTransporte)
-    {
-        $this->modoTransporte = $modoTransporte;
+        /**
+         * Set the value of modoTransporte
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setModoTransporte($modoTransporte)
+        {
+            $this->modoTransporte = $modoTransporte;
 
-    /**
-     * Get the value of fechaManifiesto
-     */
+            return $this;
+        }
 
-    public function getFechaManifiesto()
-    {
-        return $this->fechaManifiesto;
-    }
+        /**
+         * Get the value of fechaManifiesto
+         */
 
-    /**
-     * Set the value of fechaManifiesto
-     *
-     * @return  self
-     */
+        public function getFechaManifiesto()
+        {
+            return $this->fechaManifiesto;
+        }
 
-    public function setFechaManifiesto($fechaManifiesto)
-    {
-        $this->fechaManifiesto = $fechaManifiesto;
+        /**
+         * Set the value of fechaManifiesto
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaManifiesto($fechaManifiesto)
+        {
+            $this->fechaManifiesto = $fechaManifiesto;
 
-    /**
-     * Get the value of fechaPrevistaLlegada
-     */
+            return $this;
+        }
 
-    public function getFechaPrevistaLlegada()
-    {
-        return $this->fechaPrevistaLlegada;
-    }
+        /**
+         * Get the value of fechaPrevistaLlegada
+         */
 
-    /**
-     * Set the value of fechaPrevistaLlegada
-     *
-     * @return  self
-     */
+        public function getFechaPrevistaLlegada()
+        {
+            return $this->fechaPrevistaLlegada;
+        }
 
-    public function setFechaPrevistaLlegada($fechaPrevistaLlegada)
-    {
-        $this->fechaPrevistaLlegada = $fechaPrevistaLlegada;
+        /**
+         * Set the value of fechaPrevistaLlegada
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setFechaPrevistaLlegada($fechaPrevistaLlegada)
+        {
+            $this->fechaPrevistaLlegada = $fechaPrevistaLlegada;
 
-    /**
-     * Get the value of lugarSalida
-     */
+            return $this;
+        }
 
-    public function getLugarSalida()
-    {
-        return $this->lugarSalida;
-    }
+        /**
+         * Get the value of lugarSalida
+         */
 
-    /**
-     * Set the value of lugarSalida
-     *
-     * @return  self
-     */
+        public function getLugarSalida()
+        {
+            return $this->lugarSalida;
+        }
 
-    public function setLugarSalida($lugarSalida)
-    {
-        $this->lugarSalida = $lugarSalida;
+        /**
+         * Set the value of lugarSalida
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setLugarSalida($lugarSalida)
+        {
+            $this->lugarSalida = $lugarSalida;
 
-    /**
-     * Get the value of lugarDestino
-     */
+            return $this;
+        }
 
-    public function getLugarDestino()
-    {
-        return $this->lugarDestino;
-    }
+        /**
+         * Get the value of lugarDestino
+         */
 
-    /**
-     * Set the value of lugarDestino
-     *
-     * @return  self
-     */
+        public function getLugarDestino()
+        {
+            return $this->lugarDestino;
+        }
 
-    public function setLugarDestino($lugarDestino)
-    {
-        $this->lugarDestino = $lugarDestino;
+        /**
+         * Set the value of lugarDestino
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
+        public function setLugarDestino($lugarDestino)
+        {
+            $this->lugarDestino = $lugarDestino;
 
-    /**
-     * Get the value of cantidadConocimientoEmbarque
-     */
+            return $this;
+        }
 
-    public function getCantidadConocimientoEmbarque()
-    {
-        return $this->cantidadConocimientoEmbarque;
-    }
+        /**
+         * Get the value of cantidadConocimientoEmbarque
+         */
 
-    /**
-     * Set the value of cantidadConocimientoEmbarque
-     *
-     * @return  self
-     */
+        public function getCantidadConocimientoEmbarque()
+        {
+            return $this->cantidadConocimientoEmbarque;
+        }
 
-    public function setCantidadConocimientoEmbarque(
-        $cantidadConocimientoEmbarque
-    ) {
-        $this->cantidadConocimientoEmbarque = $cantidadConocimientoEmbarque;
+        /**
+         * Set the value of cantidadConocimientoEmbarque
+         *
+         * @return  self
+         */
 
-        return $this;
-    }
-} ?>
+        public function setCantidadConocimientoEmbarque(
+            $cantidadConocimientoEmbarque
+        ) {
+            $this->cantidadConocimientoEmbarque = $cantidadConocimientoEmbarque;
+
+            return $this;
+        }
+    } ?>
 
